@@ -1,6 +1,6 @@
 # Wenjun Zhu — academic website
 
-Public website: https://zwjsoar.github.io/
+Public website: https://wenjunzhu.com/
 
 Built with Quarto 1.10.18 and Python 3, deployed through a manually triggered GitHub Pages workflow. No external runtime or font service is required.
 
@@ -37,7 +37,7 @@ The repository contains only website sources and selected public asset copies. O
 
 ## Change hosting or domain
 
-Update `data/deployment.json` → `site_url` and the corresponding hosting settings, then rebuild and deploy. Canonical URLs, sitemap, robots and scholarly metadata follow that URL. No custom domain is currently configured.
+Update `data/deployment.json` → `site_url` and the corresponding hosting settings, then rebuild and deploy. Canonical URLs, sitemap, robots and scholarly metadata follow that URL. The primary custom domain is wenjunzhu.com; the site remains hosted on GitHub Pages.
 
 ## Restore a release
 
