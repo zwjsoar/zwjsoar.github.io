@@ -1,0 +1,52 @@
+profile:
+  default: preview
+  group: [[preview, production]]
+project:
+  type: website
+  output-dir: _site
+  pre-render: python3 scripts/prepare.py
+  render:
+    - index.qmd
+    - "*/index.qmd"
+    - "papers/*/index.qmd"
+  resources:
+    - "assets/**"
+    - "papers/**/*.bib"
+    - "papers/**/*.pdf"
+    - robots.txt
+    - "!.build/**"
+website:
+  title: Wenjun Zhu
+  navbar:
+    title: Wenjun Zhu
+    logo: assets/branding/nbs-logo.png
+    logo-alt: Nanyang Technological University — Nanyang Business School
+    background: light
+    collapse-below: md
+    left:
+      - {href: index.qmd, text: Home}
+      - {href: cv/index.qmd, text: CV}
+      - {href: publications/index.qmd, text: Publications}
+      - {href: working-papers/index.qmd, text: Working Papers}
+      - {href: research/index.qmd, text: Research}
+      - {href: teaching/index.qmd, text: Teaching}
+      - {href: miscellaneous/index.qmd, text: Miscellaneous}
+      - {href: zh/index.qmd, text: 中文}
+  search:
+    location: navbar
+    type: overlay
+format:
+  html:
+    theme: [cosmo, styles/theme.scss]
+    css: [styles/site.css, styles/paper-layout.css, styles/title-bands.css, styles/academic.css, styles/shared-profile.css, styles/navigation.css, styles/news-and-navigation.css, styles/typography-refinement.css, styles/chinese-light.css, styles/news-cards.css, styles/research.css]
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+    code-copy: false
+    include-after-body:
+      - _includes/carousel.html
+      - _includes/publications.html
+    page-layout: full
+lang: en
+execute:
+  enabled: false

@@ -1,1 +1,9 @@
-_site/
+/.quarto/
+/_site/
+/_site-production/
+/.build/
+/validation.json
+.DS_Store
+__pycache__/
+
+**/*.quarto_ipynb

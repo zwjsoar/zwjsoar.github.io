@@ -1,0 +1,10 @@
+{
+  "site_url": "https://zwjsoar.github.io/",
+  "github_owner": "zwjsoar",
+  "repository": "zwjsoar.github.io",
+  "content_review_complete": true,
+  "publication_enabled": true,
+  "crawler_policy": "Allow ordinary public crawling in production; no separate training-bot policy selected.",
+  "owner_approval_date": "2026-11-02",
+  "approval_note": "Owner completed publication review and authorized moving to GitHub publication. Existing manuscript versions accepted as-is; no further bibliographic corrections inferred."
+}

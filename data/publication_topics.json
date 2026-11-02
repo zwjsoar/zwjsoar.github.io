@@ -1,0 +1,25 @@
+{
+  "status": "Shared owner-approved overlapping categories for Publications and Selected Working Papers, aligned on 2026-10-23. Each list retains its original order.",
+  "topics": [
+    {
+      "id": "longevity",
+      "label": "Mortality, Health & Longevity",
+      "scope": "Mortality forecasting, longevity risk, epidemics, environmental health and life expectancy."
+    },
+    {
+      "id": "climate",
+      "label": "Climate Risk, Agriculture & Sustainability",
+      "scope": "Climate and environmental impacts, agriculture, catastrophe risk, adaptation, crop and forage insurance, yield forecasting, agricultural reinsurance and basis risk."
+    },
+    {
+      "id": "ai",
+      "label": "AI & Machine Learning in Insurance and Finance",
+      "scope": "Substantive neural-network, deep-learning, boosting and kernel-learning applications. Conventional statistical modelling and passing mentions of AI do not qualify."
+    },
+    {
+      "id": "finance",
+      "label": "Financial Markets, Hedging & Risk Transfer",
+      "scope": "Insurance-linked securities, hedging, financial inclusion, financial dependence, risk-transfer contracts, and insurance loss modelling or pricing that underpins risk transfer."
+    }
+  ]
+}

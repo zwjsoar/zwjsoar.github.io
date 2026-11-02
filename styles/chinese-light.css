@@ -1,0 +1,3 @@
+/* Further lighten Chinese copy while keeping the unified body size and spacing. */
+.zh-profile, .zh-profile p, .zh-profile p:last-child { font-weight: 300; }
+html[lang="zh-Hans"] #title-block-header h1.title { font-weight: 400; }

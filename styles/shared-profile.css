@@ -1,0 +1,44 @@
+/* Shared academic profile: one consistent left column across all pages. */
+body.shared-profile-page main.content {
+ display: grid;
+ grid-template-columns: 260px minmax(0, 1fr);
+ column-gap: 48px;
+ align-items: start;
+ max-width: var(--content-max);
+ width: 100%;
+ margin-inline: auto;
+}
+.shared-profile-page #title-block-header { grid-column: 2; grid-row: 1; }
+.site-profile { grid-column: 1; grid-row: 1 / span 2; margin-top: 30px; }
+.site-page-content { grid-column: 2; grid-row: 2; min-width: 0; }
+.home-page .site-page-content { grid-row: 1; margin-top: 42px; }
+.home-page .site-profile { margin-top: 42px; }
+.home-page .home-intro { display: block; margin-top: 0; }
+.home-page .news-section { margin-left: 0; }
+.profile-address { display: flex; align-items: flex-start; gap: .65rem; margin: 1.2rem 0 0; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .82rem; font-style: normal; line-height: 1.65; color: var(--muted); }
+.profile-address .bi { width: 1.1em; flex-shrink: 0; font-size: 1rem; color: var(--accent); }
+.profile-address a { color: var(--muted); }
+@media (min-width: 768px) and (max-width: 991.98px) {
+ body.shared-profile-page main.content { grid-template-columns: 220px minmax(0, 1fr); column-gap: 28px; }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+ .site-page-content .paper-entry-layout.has-figure { grid-template-columns: 1fr; gap: 1rem; }
+ .site-page-content .paper-entry-visual { max-width: 360px; }
+}
+@media (max-width: 767.98px) {
+ body.shared-profile-page main.content { grid-template-columns: minmax(0, 1fr); }
+ .site-profile, .home-page .site-profile { grid-column: 1; grid-row: 1; margin-top: 28px; margin-bottom: 1.8rem; }
+ .shared-profile-page #title-block-header { grid-column: 1; grid-row: 2; margin-top: 0; }
+ .site-page-content, .home-page .site-page-content { grid-column: 1; grid-row: 3; margin-top: 0; }
+ .profile-address { grid-column: 1 / -1; margin-top: 1rem; }
+ /* Mobile: keep the full profile on Home; other pages start at their title. */
+ .shared-profile-page:not(.home-page) .site-profile { display: none; }
+ .shared-profile-page:not(.home-page) #title-block-header { grid-row: 1; margin-top: 20px; }
+ .shared-profile-page:not(.home-page) .site-page-content { grid-row: 2; }
+}
+@media print {
+ body.shared-profile-page main.content { display: block; }
+ .site-profile, .home-page .site-profile { margin-top: 0; margin-bottom: 1.5rem; }
+ .home-page .site-page-content { margin-top: 0; }
+ .profile-address { border-top: 0; padding-top: 0; }
+}

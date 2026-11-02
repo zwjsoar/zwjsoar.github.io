@@ -1,0 +1,150 @@
+{
+  "updated_on": "2026-11-02",
+  "provenance": "Owner-authorized homepage and Research interest revision; current roles, editorial appointments and award supplied by owner. Historical News drawn from selected CV, without invented month/day. Biography lightly polished from owner’s latest five-paragraph draft on 28 October 2026; all four supplied links retained. Senator and GIFTS affiliation and additional editorial boards supplied by owner. Owner subsequently requested all biography text links removed; interview link is retained in News. Owner requested shortening the homepage journal list and removing all visible Teaching syllabus labels, 29 October 2026. Owner supplied the updated awards/IPCC paragraph and explicitly restored its three resource links on 2 November 2026; only the singular grammar error academic leaders was corrected. Other English biography paragraphs remain unchanged.",
+  "approved_replacement_blocks": {
+    "home": [
+      3,
+      4,
+      5
+    ],
+    "research": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "roles": [
+    "Associate Professor",
+    "Deputy Head, Division of Finance",
+    "Co-Director, Insurance Risk and Finance Research Centre (IRFRC)"
+  ],
+  "profile_icons": [
+    "mortarboard-fill",
+    "building",
+    "file-earmark-text",
+    "diagram-3-fill",
+    "linkedin"
+  ],
+  "about_paragraphs": [
+    "Wenjun Zhu (PhD, FSA, CERA) is an Associate Professor (with tenure) at Nanyang Business School (NBS), Nanyang Technological University (NTU), Singapore. She is Deputy Head of the Division of Finance and Co-Director of the Insurance Risk and Finance Research Centre (IRFRC) at NBS. She is also a Senator of NTU and a Faculty Affiliate at NTU’s Global Institute of Finance, Technology, and Society (GIFTS). She serves as an Associate Editor of Annals of Actuarial Science, Digital Finance and South African Actuarial Journal, and on the editorial boards of Humanities and Social Sciences Communications, Risks, and Sustainable Agriculture and Environment.",
+    "Wenjun received her PhD in Actuarial Science from the Department of Statistics and Actuarial Science at the University of Waterloo in 2015, becoming the department’s first PhD student admitted without a master’s degree. She holds bachelor’s degrees in Economics and Mathematics, and is a Fellow of the Society of Actuaries (FSA) and a Chartered Enterprise Risk Analyst (CERA).",
+    "Her research develops statistical, quantitative and AI-driven methods for insurance and financial risk management, with a focus on climate change, agricultural insurance, mortality and longevity risk. Working closely with the insurance industry, actuarial professional bodies and governments, her research aims to advance insurance practice through state-of-the-art tools for more effective risk management. Her work has appeared in leading academic journals including Management Science, Nature Climate Change, Insurance: Mathematics and Economics, North American Actuarial Journal, Journal of Risk and Insurance, ASTIN Bulletin, and etc.",
+    "Wenjun was a Society of Actuaries James C. Hickman Scholar and received the 2023 Actuarial Science Early Career Award (Interview), awarded annually to one young researcher worldwide for exceptional research and potential as a future academic leader in actuarial science (Award Information). She also received the 2026 Nanyang Research Award (Young Investigator), the university’s highest recognition for researchers under 40 who have made outstanding contributions to extending the frontiers of knowledge (Award ebook). Beyond academia, she contributes to global climate policy as an invited expert at the IPCC AR7 Report Scoping Meeting (December 2024) and as a Lead Author for the IPCC Seventh Assessment Report (AR7).",
+    "Wenjun teaches courses in actuarial science, finance, climate risk management and risk analytics. She received the 2020 NBS Teaching Excellence Award (TEA) and was nominated for the MSc Financial Engineering Teacher of the Year Award in 2020 and the NBS Business Teacher of the Year Award in 2021."
+  ],
+  "research_intro": "My research develops quantitative and AI-driven methods to understand, forecast and manage risks in insurance and finance. I study how demographic change, climate and health risks interact with financial markets, and how these insights can inform insurance design and risk-transfer solutions.",
+  "research_areas": [
+    {
+      "title": "Mortality, health and longevity",
+      "text": "Mortality forecasting, climate-related health risks, longevity risk management and the valuation of life-contingent products."
+    },
+    {
+      "title": "Climate, agriculture and sustainability",
+      "text": "Climate and weather risk, agricultural insurance, catastrophe risk modelling and sustainable insurance design."
+    },
+    {
+      "title": "AI-driven financial and insurance analytics",
+      "text": "Interpretable machine learning, neural models and predictive analytics for forecasting, insurance pricing and financial risk management."
+    },
+    {
+      "title": "Financial markets and risk transfer",
+      "text": "The effects of longevity and climate shocks on insurers and financial markets, corporate financing, hedging and risk-transfer solutions."
+    }
+  ],
+  "additional_grants": [
+    {
+      "name": "Nanyang Research Award (Young Investigator)",
+      "year": 2026,
+      "currency": "SGD",
+      "amount": 15000,
+      "display": "Nanyang Research Award (Young Investigator) (PI; 2026; SGD 15,000)",
+      "source": "Owner confirmation, 28 October 2026.",
+      "role": "PI"
+    }
+  ],
+  "address": {
+    "text": "Nanyang Business School, 91 Nanyang Ave, Wee Cho Yaw Plaza, 639956",
+    "url": "https://maps.google.com/maps?vet=10CAAQoqAOahcKEwj40sqqmdyXAxUAAAAAHQAAAAAQBQ..i&udm&fvr=1&pvq=Cg0vZy8xMW5fX2xyNnc2IgoKBEdhaWEQAhgDiQHx34liyHeh2A&lqi=ChY5MSBuYW55YW5nIEF2ZW51ZSBHYWlhSOa2rvn_tICACFoiEAMYABgBGAIYAyIWOTEgbmFueWFuZyBhdmVudWUgZ2FpYZIBF2VkdWNhdGlvbmFsX2luc3RpdHV0aW9umgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDI1T01sSlhWVE5qYkVwbVRGVnpNR0ZyYnpSaWJsSjFZVEZWZEZWc1JSQUL6AQQIABBK&cs=0&um=1&ie=UTF-8&fb=1&gl=sg&sa=X&ftid=0x31da0f9e11806bb7:0xd8a177c86289dff1",
+    "source": "Owner-supplied institutional address and map URL, 28 October 2026."
+  },
+  "about_links": [
+    {
+      "text": "Interview",
+      "url": "https://www.soa.org/sections/education-research/educ-research-newsletter/2024/june/eh-2024-06-zhu/"
+    },
+    {
+      "text": "Award Information",
+      "url": "https://www.soa.org/programs/volunteer/soa-awards/"
+    },
+    {
+      "text": "Award ebook",
+      "url": "/assets/awards/nanyang-awards-2026.pdf"
+    }
+  ],
+  "about_italic_titles": [
+    "Annals of Actuarial Science",
+    "Digital Finance",
+    "South African Actuarial Journal",
+    "Humanities and Social Sciences Communications",
+    "Risks",
+    "Sustainable Agriculture and Environment",
+    "Management Science",
+    "Nature Climate Change",
+    "Insurance: Mathematics and Economics",
+    "North American Actuarial Journal",
+    "Journal of Risk and Insurance",
+    "ASTIN Bulletin",
+    "Journal of Banking & Finance"
+  ],
+  "logo": {
+    "path": "assets/branding/nbs-logo.png",
+    "url": "https://www.ntu.edu.sg/business",
+    "alt": "Nanyang Technological University — Nanyang Business School",
+    "width": 326,
+    "height": 154,
+    "source": "Owner-supplied logo attachment, 28 October 2026."
+  },
+  "about_links_archive": [
+    {
+      "text": "Nanyang Business School (NBS)",
+      "url": "https://www.ntu.edu.sg/business"
+    },
+    {
+      "text": "Nanyang Technological University (NTU)",
+      "url": "https://www.ntu.edu.sg/"
+    },
+    {
+      "text": "Global Institute of Finance, Technology, and Society (GIFTS)",
+      "url": "https://www.ntu.edu.sg/gifts/about"
+    },
+    {
+      "text": "Interview",
+      "url": "https://www.soa.org/sections/education-research/educ-research-newsletter/2024/june/eh-2024-06-zhu/"
+    }
+  ],
+  "approved_removed_blocks": {
+    "research": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ]
+  },
+  "removal_provenance": "Owner requested deletion of the complete ON GOING RESEARCH TOPICS section, 28 October 2026. Original source remains archived in pages.json.",
+  "approved_source_text_overrides": {
+    "teaching": {
+      "3": "BA 3202, Actuarial Statistics",
+      "4": "BR3214, Financial Risk Analytics II",
+      "5": "BF 3207, Alternative Investments",
+      "6": "BR 3204, Property and Liability Insurance",
+      "7": "Sustainability: Corporate Strategy & Risk Management",
+      "8": "Climate Science, Climate Risk Assessment, and Sustainable Finance",
+      "9": "FE 8513, Financial Time Series Analysis",
+      "10": "FE 8514, Advanced Statistical Modeling"
+    }
+  }
+}

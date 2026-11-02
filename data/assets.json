@@ -1,0 +1,279 @@
+[
+  {
+    "target": "assets/cv/CV_WenjunZhu.pdf",
+    "sha256": "0078b7de2f2dbc88074ddcce468e0280fe23cb36132c8ab09243d3bcc93f7fd1",
+    "usage": "Owner-selected CV; only PDF allowed in local build"
+  },
+  {
+    "target": "assets/profile/profile.png",
+    "sha256": "84091ab7aa25f72dbeee4038ef431564c0540d2c69b5b297dd759619651e0561",
+    "usage": "Home portrait"
+  },
+  {
+    "target": "assets/figures/NCC_Fig1v1.png",
+    "sha256": "aecc2c90fdb1227bf0175aae45fe742eb1a6f70ae48154d47db387f411b75cd2",
+    "usage": "refereed-23"
+  },
+  {
+    "target": "assets/figures/NCC_Fig2.png",
+    "sha256": "c2e6ab7b46641ab4a60e921214ffb6a4003b2578d7325515e82c2922b74b185b",
+    "usage": "refereed-23"
+  },
+  {
+    "target": "assets/figures/IID_NN.jpeg",
+    "sha256": "ed6a15b4b74e83d721f0172ef7c381c96748c7c02ee39407ceffbe203355ddf1",
+    "usage": "refereed-18"
+  },
+  {
+    "target": "assets/figures/CNN_mort.jpeg",
+    "sha256": "1f6597c55f76174286e037048f374c68df88e21c3057dd152c8d325a63c0cf95",
+    "usage": "refereed-13"
+  },
+  {
+    "target": "assets/figures/JRI_LSHAC.jpeg",
+    "sha256": "6b436de3933cad482ba72e46244b34f44655bb2fbc3d8907e2b626e50f6b2a58",
+    "usage": "refereed-03"
+  },
+  {
+    "target": "assets/figures/Bonddur.jpeg",
+    "sha256": "e80fd32a87503171c4fcdedd53a7d8f76aac04c7ae4f69abf70526358378cf24",
+    "usage": "working-01"
+  },
+  {
+    "target": "assets/figures/Momentum.jpeg",
+    "sha256": "00b1153149b6ff64e4efd7373e95f0f6b51f0da6b53bf6e24f57ca79132bf564",
+    "usage": "working-06"
+  },
+  {
+    "target": "assets/fonts/PragatiNarrow-Bold-Latin.woff2",
+    "sha256": "c355ba6c715a67cfaac1353805075e7ef1f91e471991d1216add87260b569b6b",
+    "usage": "Self-hosted open-source typography; no external font requests"
+  },
+  {
+    "target": "assets/fonts/Roboto-Italic-Latin.woff2",
+    "sha256": "9f06741ff731c4555398df16ce523ee8fd24dfd9dfd2ff2a6c9d63239cf0e9f7",
+    "usage": "Self-hosted open-source typography; no external font requests"
+  },
+  {
+    "target": "assets/fonts/Roboto-Latin.woff2",
+    "sha256": "0a44e0bb6ba5c8537e8814c148ef7755f1bce12112361231f595ecc584a18d7a",
+    "usage": "Self-hosted open-source typography; no external font requests"
+  },
+  {
+    "target": "assets/fonts/PragatiNarrow-OFL.txt",
+    "sha256": "2dab153a33dcb2101bba3f194d27d953c848a0fabf2e336650a81f84a0c33b3f",
+    "usage": "Required open-font license notice"
+  },
+  {
+    "target": "assets/fonts/Roboto-OFL.txt",
+    "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41",
+    "usage": "Required open-font license notice"
+  },
+  {
+    "target": "assets/branding/nbs-logo.png",
+    "sha256": "65dd3549578ab5c125159de235c43b1f1b0d15131e765c60668b66f07ac17d74",
+    "usage": "Owner-requested NBS logo in shared profile; displayed unchanged at natural aspect ratio"
+  },
+  {
+    "target": "assets/papers/EE_Zhu_R2.pdf",
+    "sha256": "19ae6614322b4afc779a409b9ce3098e3992d7d7e9de229fab120b7c0fef1be6",
+    "usage": "Compatibility copy of the mapped Energy Economics main PDF; no upload or publication performed.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-26",
+    "pdf_role": "legacy_alias",
+    "alias_of": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf"
+  },
+  {
+    "target": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf",
+    "sha256": "19ae6614322b4afc779a409b9ce3098e3992d7d7e9de229fab120b7c0fef1be6",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Existing owner-selected conditional-acceptance manuscript; original currently remains outside materials/.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-26",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/quantile-based-interpretable-neural-network-models-mortality-forecasting-and-actuarial-simulations/paper.pdf",
+    "sha256": "526b1f81976e00d99943153d95e5e410274b15b18113919297b50034bb458e8c",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Accepted manuscript, identified on its first page.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-25",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/air-quality-health-and-economic-effects-of-land-use-and-land-cover-changes-in-southeast-asia-in-the-21st-century-a-modelling-study/paper.pdf",
+    "sha256": "e3155f4bd312b34cd7253263633d8516373209ba7cc5b9bb80fd860ae16e1618",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching article title and ordered authors.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-24",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/enduring-impacts-of-el-nino-on-life-expectancy-in-past-and-future-climates/paper.pdf",
+    "sha256": "1444fa5ddf438dbc3f4325d0688b47867aec452d6e440fc98578153c977f4aa5",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Author manuscript; first page identifies the revised published article and DOI.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-23",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/epidemic-financing-facilities-pandemic-bonds-and-endemic-swaps/paper.pdf",
+    "sha256": "c459abe8de9298dd0cd276b6a7df02e26ebe60d68052a1a4696083784abf0cd4",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-20",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/managing-weather-risk-with-a-neural-network-based-index-insurance/paper.pdf",
+    "sha256": "79c39dad1f9718cea0f8f120c22afb128422efc9b8ac3384b8d6391468c24ebe",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title, ordered authors and abstract.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-18",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/machine-learning-in-long-term-mortality-forecasting/paper.pdf",
+    "sha256": "e7470ef653a8409cf14137d19eceb1e92ae74ac983b13a8476e3ca5a439919cc",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors; journal issue date stays separate.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-17",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/cyber-risk-modeling-a-discrete-multivariate-count-process-approach/paper.pdf",
+    "sha256": "a47c41993c8ff23be8e72e65989c97eb53b773ee5be1e32a3054bfaf911929e6",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-16",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/storm-cat-bond-modeling-and-valuation/paper.pdf",
+    "sha256": "ad2e9b01e293dc6317eef47b1f72c92d9d0ba926f152b9a6b1ac2d353dd67ceb",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Publisher-formatted article with matching title, ordered authors and DOI.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-15",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/a-deep-factor-model-for-crop-yield-forecasting-and-insurance-ratemaking/paper.pdf",
+    "sha256": "77a82e93f53c48546be75a38da61f66c4c3ca202f0c95a0c17cdb50d87a970e7",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and sole author.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-14",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/neighbouring-prediction-for-mortality/paper.pdf",
+    "sha256": "f52614b308a734264d48337e48bd3dbf71fd47ac05b100d436a7ff8521ee3749",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors. PDF still says forthcoming; the HTML retains published journal details.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-13",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/gompertz-law-revisited-forecasting-mortality-with-a-multi-factor-exponential-model/paper.pdf",
+    "sha256": "3466262067b5b593132dfc8f3570294fe0b8946ed458b588468123f6608e2ed5",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching title and ordered authors; manuscript version January 2020, distinct from the journal issue date.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-12",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/improved-index-insurance-design-and-yield-estimation-using-a-dynamic-factor-forecasting-approach/paper.pdf",
+    "sha256": "e769ceb4228e2d935f0cca68644d2f878c016e9b486855e586ce4ea8be365ed2",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching title, ordered authors and study; dated January 2020 manuscript, distinct from journal issue date.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-11",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/dynamic-bayesian-ratemaking-a-markov-chain-approximation-approach/paper.pdf",
+    "sha256": "13fd4ed6f891a50398e60a79a06d5cf6eaa21d41ddb8e4b36fef716aad5ec453",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors; filename is not treated as current publication status.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-10",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/remote-sensing-applications-for-insurance-an-example-of-predicting-forage-crop-loss-in-the-presence-of-systemic-weather-risk/paper.pdf",
+    "sha256": "e53f1d79e55de8d7923c29ab162ce3ff3d4061ceb35de682031254f550dc4443",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Title matches the DOI-backed published title; ordered authors match. Existing source-based index wording is unchanged.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-08",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/a-relational-data-matching-model-for-enhancing-individual-loss-experience-an-example-from-crop-insurance/paper.pdf",
+    "sha256": "c215e8b0e424c2c832901cd439f6c2e7f70cfe44416059bdc390c5ee2d06c205",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Title variant the Case of rather than An Example from; ordered authors and abstract identify the same paper. Served as the supplied manuscript, without changing the citation.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-07",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/agricultural-insurance-ratemaking-development-of-a-new-premium-principle/paper.pdf",
+    "sha256": "caa72149ec185026fcdfc21ad9b78b116ca69a112370cb1b19b193be54d4ea7f",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-06",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/a-credibility-based-yield-forecasting-model-for-crop-reinsurance-pricing-and-weather-risk-management/paper.pdf",
+    "sha256": "b410098f6aa6a9a2fcffcad1054e663550df38c168a7c9dfd236d0b332c478fc",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Publisher-formatted matching article selected over the older June 2015 draft.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-05",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/spatial-dependence-and-aggregation-in-hedging-systemic-weather-risk-a-levy-subordinated-hierarchical-archimedean-copulas-lshac-approach/paper.pdf",
+    "sha256": "454b56bcc57231eb26d9deeea60f1d75ecc5cefb3cd12096c0e125661c881c22",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Publisher-formatted matching article selected over the revision draft; title matches the DOI-backed record.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-04",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/modeling-multi-population-longevity-risk-with-mortality-dependence-a-levy-subordinated-hierarchical-archimedean-copulas-lshac-approach/paper.pdf",
+    "sha256": "362210cadbf455d423588e1dcc196d3f9624285773a74428ce863acab35ce731",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Publisher-formatted title and DOI match the scholarly record. Existing index title variant remains unchanged.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-03",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/structure-and-estimation-of-levy-subordinated-hierarchical-archimedean-copulas-lshac-theory-and-empirical-tests/paper.pdf",
+    "sha256": "7c70eb971e39c9eaad152978a606ab9bd06e0f1918873e4de02c4c52d54d6e9e",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching manuscript title and ordered authors; historical affiliations are not reused in the website profile.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-02",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/a-credibility-based-erlang-mixture-model-for-pricing-crop-reinsurance/paper.pdf",
+    "sha256": "0a583ee0e0afeeb18c4db4534a1a89c99681a28cc031e0ced42e71a519246fac",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Publisher-formatted title and ordered authors match; excludes the older draft with a different author order.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "refereed-01",
+    "pdf_role": "main"
+  },
+  {
+    "target": "papers/duration-hedging-trades-return-momentum-and-reversal/paper.pdf",
+    "sha256": "7a51dbe3da169d0b9cc0c8483764d55fefbf7ad725979e57e990b9ec7e46833a",
+    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Matching working-paper title, ordered authors and abstract; no replacement date inferred.",
+    "owner_approved_paper_pdf": true,
+    "paper_id": "working-06",
+    "pdf_role": "main"
+  },
+  {
+    "target": "assets/awards/nanyang-awards-2026.pdf",
+    "source_url": "https://ebook.ntu.edu.sg/nanyang-awards-2026",
+    "sha256": "0f57062ddf04ff1d1dabebf41baf4e953e5d206a6d3f4290a43e325b0a689125",
+    "usage": "Owner-requested unchanged local backup of the official Nanyang Awards 2026 ebook, supplied on 2026-11-02.",
+    "owner_approved_document_pdf": true,
+    "document_id": "nanyang-awards-2026",
+    "pdf_role": "archival_document"
+  }
+]

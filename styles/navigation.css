@@ -1,0 +1,36 @@
+/* NBS branding in the page header, independent of academic content. */
+.navbar { padding: 8px 24px; min-height: 76px; }
+.navbar .navbar-container { max-width: 1240px; gap: 0; }
+.navbar .navbar-brand-container { display: flex; align-items: center; gap: 14px; margin: 0 22px 0 0 !important; flex-shrink: 0; max-width: none; }
+.navbar .navbar-brand { margin: 0; padding: 0; font-size: 1.45rem; white-space: nowrap; flex-shrink: 0; overflow: visible; }
+.navbar .navbar-logo { display: block; width: 106px; height: auto; max-height: none; object-fit: contain; }
+.navbar.navbar-expand-md .navbar-nav .nav-link { font-family: var(--font-body); font-size: .82rem; font-weight: 500; text-transform: none; letter-spacing: 0; white-space: nowrap; padding: .65rem .48rem; }
+.navbar .navbar-nav .nav-link.active { font-weight: 600; }
+@media (min-width: 768px) and (max-width: 1199.98px) {
+ .navbar { padding: 8px 24px 0; }
+ .navbar .navbar-container { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+ .navbar .navbar-brand-container { grid-column: 1; grid-row: 1; margin: 0 !important; }
+ .navbar #quarto-search { grid-column: 2; grid-row: 1; }
+ .navbar .navbar-collapse { grid-column: 1 / -1; grid-row: 2; width: 100%; margin-top: 5px; }
+ .navbar .navbar-nav { width: 100%; justify-content: space-between; }
+ .navbar.navbar-expand-md .navbar-nav .nav-link { padding-inline: .35rem; }
+ .navbar .quarto-navbar-tools:empty { display: none; }
+}
+@media (max-width: 767.98px) {
+ .navbar { padding: 8px 12px; min-height: 64px; }
+ .navbar .navbar-container { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; }
+ .navbar .navbar-brand-container { grid-column: 1; grid-row: 1; margin: 0 !important; gap: 10px; min-width: 0; }
+ .navbar .navbar-logo { width: 88px; }
+ .navbar .navbar-brand { font-size: 1.3rem; }
+ .navbar .navbar-toggler { grid-column: 2; grid-row: 1; margin: 0; }
+ .navbar #quarto-search { grid-column: 3; grid-row: 1; margin: 0; }
+ .navbar .navbar-collapse { grid-column: 1 / -1; grid-row: 2; width: 100%; }
+ .navbar.navbar-expand-md .navbar-nav .nav-link { font-size: .94rem; padding: .65rem .6rem; }
+ .navbar .quarto-navbar-tools:empty { display: none; }
+}
+
+@media (max-width: 359.98px) {
+ .navbar .navbar-brand-container { gap: 8px; }
+ .navbar .navbar-logo { width: 80px; }
+ .navbar .navbar-brand { font-size: 1.2rem; }
+}

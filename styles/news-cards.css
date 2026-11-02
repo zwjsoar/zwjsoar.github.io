@@ -1,0 +1,4 @@
+/* Short dark titles with smaller muted detail text, shared by Home and All News. */
+.news-copy { min-width: 0; }
+.news-entry .news-title { font-family: var(--font-body); font-size: 1rem; font-weight: 700; line-height: 1.4; color: var(--ink); margin: 0 0 .35rem; }
+.news-entry .news-description { font-family: var(--font-body); font-size: .86rem; font-weight: 400; line-height: 1.6; color: var(--muted); margin: 0; }

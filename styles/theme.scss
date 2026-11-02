@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+$primary: #5e2d65;
+$body-color: #252830;
+$body-bg: #ffffff;
+$link-color: #5e2d65;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+$headings-font-family: Georgia, "Times New Roman", "Songti SC", "STSong", SimSun, serif;
+$font-size-base: 1rem;
+$line-height-base: 1.7;
+$headings-font-weight: 400;
+$navbar-bg: #fff;
+$navbar-fg: #514858;
+$navbar-hl: #5e2d65;
+$grid-body-width: 1080px;
+$min-contrast-ratio: 4.5;
+// The inherited Cosmo font import is unnecessary with system font stacks.
+$web-font-path: false;
+/*-- scss:rules --*/
+.navbar { border-bottom: 1px solid #e4dfe8; }
+.navbar-brand { font-weight: 400; }
+a { text-underline-offset: .16em; }

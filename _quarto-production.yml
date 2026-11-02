@@ -1,0 +1,9 @@
+project:
+  output-dir: _site-production
+  post-render: python3 scripts/finalize_production.py
+website:
+  page-footer:
+    left: Wenjun Zhu
+    center:
+      - {href: news/index.qmd, text: News}
+    right: ""

@@ -1,0 +1,229 @@
+{
+  "updated_on": "2026-11-02",
+  "sort_rule": "Reverse chronological by confirmed event/announcement date; year-only entries retain year precision and assert no month/day.",
+  "entries": [
+    {
+      "id": "astin-bulletin-keynote-2027",
+      "date": "2027-01-20",
+      "end_date": "2027-01-22",
+      "date_precision": "day",
+      "date_kind": "event",
+      "display_date": "20–22 January 2027",
+      "label": "Upcoming",
+      "text": "Keynote presentation at the 2nd ASTIN Bulletin Conference, hosted by the University of Naples Parthenope in Naples, Italy.",
+      "url": "https://disaq.uniparthenope.it/2nd-astin-bulletin-conference/",
+      "link_label": "Conference website",
+      "visible": true,
+      "recorded_on": "2026-10-20",
+      "source_note": "Upcoming keynote, dates and conference link supplied by owner.",
+      "category": "Talk",
+      "title": "ASTIN keynote"
+    },
+    {
+      "id": "nanyang-research-award-young-investigator-2026",
+      "date": "2026-10",
+      "date_precision": "month",
+      "date_kind": "award",
+      "display_date": "October 2026",
+      "label": null,
+      "text": "Received the 2026 Nanyang Research Award (Young Investigator).",
+      "url": "/assets/awards/nanyang-awards-2026.pdf",
+      "visible": true,
+      "recorded_on": "2026-10-20",
+      "link_label": "Nanyang Awards 2026",
+      "announcement_url": null,
+      "announcement_link_label": "Official award announcement",
+      "announcement_pending": false,
+      "category": "Award",
+      "title": "Nanyang Research Award",
+      "source_note": "Owner supplied the 2026 Nanyang Award e-booklet link on 2026-10-29, replacing the general award introduction and pending-announcement note."
+    },
+    {
+      "id": "energy-economics-conditional-acceptance-2026",
+      "date": "2026-10",
+      "date_precision": "month",
+      "date_kind": "conditional_acceptance",
+      "display_date": "October 2026",
+      "category": "Paper",
+      "text": "Conditional acceptance at Energy Economics: “Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies”.",
+      "url": "/papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/index.html",
+      "link_label": "Paper details",
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source_note": "Conditional acceptance and October 2026 explicitly supplied/confirmed by owner; local PDF stays private.",
+      "title": "Energy Economics conditional acceptance"
+    },
+    {
+      "id": "ncc-publication-2026",
+      "date": "2026-01",
+      "date_precision": "month",
+      "date_kind": "publication",
+      "display_date": "January 2026",
+      "category": "Paper",
+      "text": "Published online in Nature Climate Change: “Enduring Impacts of El Niño on Life Expectancy in Past and Future Climates”.",
+      "url": "https://doi.org/10.1038/s41558-025-02534-4",
+      "link_label": "Paper",
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source_note": "Owner-requested acceptance/publication News; publisher confirms online publication on 9 January 2026. Acceptance date is not inferred from this News month.",
+      "title": "Nature Climate Change publication"
+    },
+    {
+      "id": "risk-sciences-conference-2025",
+      "date": "2025-09-10",
+      "date_precision": "day",
+      "date_kind": "event",
+      "display_date": "10 September 2025",
+      "label": null,
+      "text": "Chaired the 2nd Risk Sciences Annual Conference at Wee Cho Yaw Plaza, Nanyang Business School.",
+      "url": "https://www.ntu.edu.sg/irfrc/news-events/events/detail/2025/09/10/default-calendar/2025-risk-sciences-annual-conference",
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source_note": "Conference edition and venue supplied by owner; date explicitly confirmed by owner. NTU event page corroborates 10 September 2025.",
+      "source_url": "https://www.ntu.edu.sg/irfrc/news-events/events/detail/2025/09/10/default-calendar/2025-risk-sciences-annual-conference",
+      "category": "Event",
+      "title": "Risk Sciences conference",
+      "link_label": "Conference webpage"
+    },
+    {
+      "id": "l20-chair-2025",
+      "date": "2025-09-08",
+      "date_precision": "day",
+      "date_kind": "event",
+      "display_date": "8–9 September 2025",
+      "text": "Chaired the 20th International Longevity Risk and Capital Markets Solutions Conference (L20) at Marina Bay, Singapore.",
+      "url": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/centres/pensions-institute/events/longevity-20",
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source": {
+        "file": "materials/CV_WenjunZhu.pdf",
+        "page": 11
+      },
+      "review_status": "draft_for_owner_review",
+      "end_date": "2025-09-09",
+      "link_label": "Conference webpage",
+      "category": "Event",
+      "title": "Longevity 20 conference"
+    },
+    {
+      "id": "llm-supply-chain-project-2025",
+      "date": "2025-04",
+      "date_precision": "month",
+      "date_kind": "grant",
+      "display_date": "April 2025",
+      "text": "Joined as Co-PI on the CyberSG R&D Programme Office project “From Risk Identification to Risk Management: A Systematic Approach to Mitigating LLM Supply Chain Risks” (2025–2027); PI: Prof Xie Xiaofei.",
+      "url": null,
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source": {
+        "file": "materials/CV_WenjunZhu.pdf",
+        "page": 3
+      },
+      "review_status": "draft_for_owner_review",
+      "category": "Grant",
+      "title": "CRPO research grant",
+      "date_source": "Owner correction in browser comment 23, 29 October 2026."
+    },
+    {
+      "id": "tenured-associate-professor-2024",
+      "date": "2024-03",
+      "date_precision": "month",
+      "date_kind": "appointment",
+      "display_date": "March 2024",
+      "text": "Promoted to Associate Professor with tenure at Nanyang Business School, Nanyang Technological University.",
+      "url": null,
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source": {
+        "file": "materials/CV_WenjunZhu.pdf",
+        "page": 1
+      },
+      "review_status": "draft_for_owner_review",
+      "date_source": "March 2024 explicitly confirmed by owner, 28 October 2026.",
+      "category": "Event",
+      "title": "Promotion with tenure"
+    },
+    {
+      "id": "climate-transformation-program-2023",
+      "date": "2023-12",
+      "date_precision": "month",
+      "date_kind": "appointment",
+      "display_date": "December 2023",
+      "text": "Joined the Climate Transformation Program (CTP) as a Project PI under the MOE Tier 3 Grant (2023–2030).",
+      "url": "https://earthobservatory.sg/research/climate/climate-transformation-programme",
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source": {
+        "file": "materials/CV_WenjunZhu.pdf",
+        "page": 3
+      },
+      "review_status": "draft_for_owner_review",
+      "inline_link_text": "Climate Transformation Program (CTP)",
+      "date_source": "December 2023 explicitly confirmed by owner, 28 October 2026.",
+      "category": "Grant",
+      "title": "Climate Transformation Program"
+    },
+    {
+      "id": "actuarial-early-career-award-2023",
+      "date": "2023-08",
+      "date_precision": "month",
+      "date_kind": "announcement",
+      "display_date": "August 2023",
+      "text": "Received the 2023 Actuarial Science Early Career Award, recognising exceptional scientific contributions to actuarial science at an early stage of an academic career.",
+      "url": "https://www.soa.org/sections/education-research/educ-research-newsletter/2024/june/eh-2024-06-zhu/",
+      "visible": true,
+      "recorded_on": "2026-10-28",
+      "source": {
+        "file": "materials/CV_WenjunZhu.pdf",
+        "page": 2
+      },
+      "review_status": "draft_for_owner_review",
+      "award_year": 2023,
+      "link_label": "Interview",
+      "date_source": "Owner correction in browser comment 24, 29 October 2026; supersedes the earlier March 2024 date.",
+      "category": "Award",
+      "title": "Actuarial Science Early Career Award"
+    }
+  ],
+  "archived_entries": [
+    {
+      "id": "deputy-head-finance-2024",
+      "date": "2024",
+      "date_precision": "year",
+      "date_kind": "year_record",
+      "display_date": "2024",
+      "text": "I was appointed Deputy Head of the Division of Finance at Nanyang Business School.",
+      "url": null,
+      "visible": false,
+      "recorded_on": "2026-10-28",
+      "source": {
+        "file": "materials/CV_WenjunZhu.pdf",
+        "page": 1
+      },
+      "review_status": "draft_for_owner_review",
+      "archive_reason": "Not included in owner’s replacement News list, 28 October 2026. Appointment remains in the biography, profile and CV."
+    }
+  ],
+  "categories": [
+    {
+      "label": "Award",
+      "scope": "Research and teaching awards."
+    },
+    {
+      "label": "Paper",
+      "scope": "Paper publication and editorial-decision updates; conditional acceptance explicitly labelled."
+    },
+    {
+      "label": "Event",
+      "scope": "Conferences, projects and career milestones."
+    },
+    {
+      "label": "Talk",
+      "scope": "Invited talks and keynote presentations."
+    },
+    {
+      "label": "Grant",
+      "scope": "Research grant and funded project updates."
+    }
+  ]
+}

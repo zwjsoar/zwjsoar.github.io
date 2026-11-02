@@ -1,0 +1,185 @@
+/* Reference-inspired academic presentation. Original prose/data stay separate.
+   Fonts are served locally; their OFL notices are in assets/fonts/. */
+@font-face {
+  font-family: "Pragati Narrow";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/PragatiNarrow-Bold-Latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/Roboto-Latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/Roboto-Italic-Latin.woff2") format("woff2");
+}
+:root {
+  --ink: #333332;
+  --muted: #625868;
+  --accent: #5e2d65;
+  --accent-hover: #45204b;
+  --rule: #e4dfe8;
+  --surface: #f7f5f8;
+  --control-border: #8e7f91;
+  --bs-primary: #5e2d65;
+  --bs-primary-rgb: 94, 45, 101;
+  --bs-link-color: #5e2d65;
+  --bs-link-hover-color: #45204b;
+  --content-max: 1060px;
+  --title-band-bg: #f3eef5;
+  --title-band-edge: #cdbed1;
+  --font-body: "Roboto", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-heading: "Pragati Narrow", "Arial Narrow", "Roboto", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+html:root { font-size: 16.5px; }
+body { font-family: var(--font-body); color: var(--ink); line-height: 1.6; background: #fff; }
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+main.content { padding-inline: 24px; }
+body:not(.home-page):not(.paper-page) main.content { max-width: 990px; margin-inline: auto; width: 100%; }
+h1, h2, h3, .section-heading { font-family: var(--font-heading); font-weight: 700; color: var(--ink); letter-spacing: 0; }
+h2 { font-size: 1.9rem; line-height: 1.2; }
+h3 { font-size: 1.55rem; }
+.section-heading { font-size: 1.7rem; margin: 1.7rem 0 1.1rem; }
+.navbar { background: #fff; min-height: 72px; padding-block: 9px; border-bottom: 1px solid #eae3ed; }
+.navbar .navbar-container { max-width: 1000px; }
+.navbar .navbar-brand { font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--ink); margin-right: 1.6rem; }
+.navbar.navbar-expand-md .navbar-nav .nav-link { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; color: #514455; padding-inline: .52rem; text-transform: uppercase; letter-spacing: .01em; }
+.navbar .nav-link.active { color: #5e2d65; border-bottom-color: #75427e; }
+.navbar .nav-link:hover { color: var(--accent-hover); }
+#title-block-header,
+.paper-page #title-block-header { margin: 30px 0 30px; padding: 22px 26px; background: var(--title-band-bg); border-left: 0; border-bottom: 1px solid var(--rule); }
+#title-block-header h1.title,
+.paper-page #title-block-header h1.title { font-family: var(--font-heading); font-weight: 700; font-size: clamp(2rem, 3.3vw, 2.55rem); line-height: 1.16; letter-spacing: 0; color: var(--ink); }
+.paper-page #title-block-header h1.title { font-size: clamp(1.9rem, 3vw, 2.35rem); line-height: 1.22; }
+/* Home already has the original identity and About headings. Keep its H1
+   available to assistive technology without a second large banner. */
+.home-page #title-block-header { position: absolute; width: 1px; height: 1px; padding: 0; margin: 0; border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.home-intro { display: grid; grid-template-columns: 260px minmax(0, 1fr); column-gap: 48px; align-items: start; margin-top: 42px; }
+.home-profile { min-width: 0; }
+.home-portrait { width: 200px; margin: 4px 0 18px; }
+.home-portrait img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; object-position: 50% 28%; }
+.home-profile h2 { font-family: var(--font-heading); font-size: 1.7rem; line-height: 1.15; margin: 0 0 .8rem; color: var(--ink); }
+.home-profile .profile-links { margin-top: 1rem; }
+.profile-links p { font-size: .875rem; line-height: 1.95; margin-bottom: 0; }
+.profile-links a { display: inline-block; min-width: calc(100% - 1.4em); white-space: nowrap; }
+.home-main { min-width: 0; }
+.home-main > h3 { font-family: var(--font-heading); font-size: 1.95rem; font-weight: 700; line-height: 1.2; margin: 0 0 1rem; padding-bottom: .55rem; border-bottom: 1px solid #d1bfd5; }
+.home-copy p { line-height: 1.65; margin-bottom: 1.2rem; }
+.home-page .news-section { margin-left: 308px; margin-top: 1.8rem; padding-top: 0; border-top: 0; }
+.news-heading { padding-bottom: .55rem; margin-bottom: .9rem; border-bottom: 1px solid #d1bfd5; }
+.news-heading h2 { font-size: 1.95rem; margin-bottom: 0; }
+.news-heading a { font-size: .82rem; }
+.news-entry { grid-template-columns: 125px minmax(0, 1fr); gap: 20px; padding-block: .9rem; }
+.news-entry p { font-size: .94rem; line-height: 1.6; }
+.news-entry time { font-size: .82rem; }
+.paper-entry { padding: 1.2rem 0 1.25rem; border-bottom-color: #e4dfe8; }
+.paper-page-link { font-family: var(--font-body); font-size: 1.08rem; font-weight: 700; line-height: 1.45; margin-bottom: .6rem; }
+main.content .paper-entry .paper-page-link a { color: #5e2d65; font-weight: 700; text-decoration: none; }
+main.content .paper-entry .paper-page-link a:hover,
+main.content .paper-entry .paper-page-link a:focus-visible { text-decoration: underline; }
+.paper-entry .paper-authors, .paper-venue { font-size: .9rem; line-height: 1.5; }
+.paper-venue { color: #625868; }
+.paper-history { font-size: .84rem; }
+.paper-summary { font-size: .94rem; line-height: 1.6; margin-block: .65rem; }
+.paper-resources { font-size: .83rem; margin-block: .35rem .55rem; }
+.paper-topics { gap: .3rem .45rem; font-size: .75rem; }
+.paper-topics li { padding: .15rem .42rem; background: #f3eef5; color: #625068; }
+.paper-entry-visual figcaption { font-size: .79rem; color: var(--muted); }
+.publication-controls { padding: 18px; background: #f8f5fa; border-color: #e4dce8; border-radius: 2px; margin-bottom: 1.8rem; }
+.publication-search label { font-size: .86rem; font-weight: 600; }
+.publication-controls button { font-size: .83rem; color: #5e2d65; border-color: var(--control-border); }
+.publication-controls button:hover { background: #eee5f1; border-color: #75427e; }
+.topic-filters { gap: .45rem; }
+.topic-filters button[aria-pressed="true"] { background: #5e2d65; border-color: #5e2d65; color: #fff; }
+.publication-count { font-size: .81rem; }
+.publication-search input { font-size: .94rem; border-color: var(--control-border); }
+.publication-search input::placeholder { color: var(--muted); }
+.cv-institution h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 600; }
+.teaching-institution > p { font-family: var(--font-heading); font-size: 1.6rem; color: var(--ink); }
+.teaching-table { font-size: .9rem; }
+.teaching-table th { background: #f3eef5; color: #5e2d65; border-bottom-color: #cdbed1; }
+.review-note { border-left-color: #a58aae; background: #f7f3f9; color: #625068; }
+.zh-profile { font-size: 1.04rem; line-height: 1.95; }
+.zh-profile h2 { font-family: var(--font-body); font-size: 1.5rem; font-weight: 600; }
+.nav-footer { border-top-color: #e4dfe8; }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar { padding-inline: 12px; }
+  .navbar .navbar-brand { font-size: 1.5rem; margin-right: .55rem; }
+  .navbar.navbar-expand-md .navbar-nav .nav-link { font-size: .92rem; padding-inline: .25rem; white-space: nowrap; }
+  .home-intro { grid-template-columns: 220px minmax(0, 1fr); column-gap: 28px; }
+  .home-portrait, .home-portrait img { width: 180px; }
+  .home-portrait img { height: 180px; }
+  .home-profile h2 { font-size: 1.16rem; }
+  .home-page .news-section { margin-left: 248px; }
+}
+@media (max-width: 767.98px) {
+  html:root { font-size: 16px; }
+  main.content { padding-inline: 20px; }
+  .navbar { min-height: 64px; padding-inline: 16px; }
+  .navbar .navbar-brand { font-size: 1.5rem; }
+  .navbar.navbar-expand-md .navbar-nav .nav-link { font-size: 1.05rem; padding: .55rem .6rem; }
+  .navbar .nav-link.active { border-left-color: #75427e; background: #f3eef5; }
+  #title-block-header, .paper-page #title-block-header { margin: 20px 0 26px; padding: 20px; }
+  #title-block-header h1.title { font-size: 2rem; }
+  .paper-page #title-block-header h1.title { font-size: 1.8rem; }
+  .home-intro { grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }
+  .home-profile { display: grid; grid-template-columns: 104px minmax(0, 1fr); column-gap: 20px; align-items: start; }
+  .home-portrait { grid-column: 1; grid-row: 1 / 3; width: 104px; margin: 0; }
+  .home-portrait img { width: 104px; height: 104px; }
+  .home-profile h2 { grid-column: 2; font-size: 1.55rem; margin: 0; }
+  .home-profile .profile-links { grid-column: 2; margin-top: .7rem; }
+  .profile-links p { font-size: .875rem; line-height: 1.85; }
+  .home-main > h3, .news-heading h2 { font-size: 1.85rem; }
+  .home-copy p { line-height: 1.65; }
+  .home-page .news-section { margin-left: 0; }
+  .news-entry { grid-template-columns: 1fr; gap: .35rem; }
+  .paper-page-link { font-size: 1.08rem; }
+  .paper-topics { font-size: .78rem; }
+  .publication-controls { padding: 15px; }
+  .publication-controls button { font-size: .84rem; }
+  .publication-search input { font-size: 1rem; }
+}
+@media print {
+  #title-block-header, .paper-page #title-block-header { background: none; border: 0; padding: 0; }
+  .home-intro { display: block; margin-top: 0; }
+  .home-profile { margin-bottom: 1.5rem; }
+  .home-portrait { display: none; }
+  .home-page .news-section { margin-left: 0; }
+}
+
+/* Purple profile refinement, 28 October 2026. */
+h1, h2, h3, .section-heading, #title-block-header h1.title,
+.paper-page #title-block-header h1.title { color: var(--accent); }
+.home-profile h2 { font-size: 1.4rem; white-space: nowrap; margin-bottom: .65rem; }
+.profile-roles { list-style: none; padding: 0; margin: 0 0 1.1rem; color: var(--muted); font-size: .84rem; line-height: 1.5; }
+.profile-roles li { margin-bottom: .45rem; }
+.profile-links p { display: flex; flex-direction: column; gap: .35rem; }
+.profile-links p > span { display: none; }
+.profile-links a { display: flex; align-items: center; gap: .65rem; min-width: 0; width: fit-content; text-decoration: none; }
+.profile-links .bi { width: 1.1em; flex-shrink: 0; color: var(--accent); font-size: 1rem; }
+.news-entry .news-year { font-size: .82rem; color: var(--muted); }
+.research-areas { padding-left: 1.25rem; }
+.research-areas li { margin-bottom: .85rem; }
+.research-areas strong { color: var(--accent); }
+.additional-grants { margin-bottom: 0; }
+@media (min-width: 768px) and (max-width: 991.98px) {
+ .home-profile h2 { font-size: 1.16rem; }
+ .profile-roles { font-size: .8rem; }
+}
+@media (max-width: 767.98px) {
+ .home-profile h2 { white-space: normal; font-size: 1.55rem; }
+ .home-portrait { grid-row: 1 / 3; }
+ .profile-roles { grid-column: 2; margin: .6rem 0 0; font-size: .84rem; }
+ .home-profile .profile-links { grid-column: 1 / -1; margin-top: 1rem; }
+ .profile-links p { gap: .4rem; }
+}
+

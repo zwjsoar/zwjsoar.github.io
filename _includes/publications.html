@@ -1,0 +1,47 @@
+<script>
+(() => {
+  const root = document.querySelector('[data-publication-browser]');
+  if (!root) return;
+  const controls = root.querySelector('.publication-controls');
+  const query = root.querySelector('#publication-query');
+  const entries = [...root.querySelectorAll('.paper-entry')];
+  const buttons = [...root.querySelectorAll('[data-topic]')];
+  const groups = [...root.querySelectorAll('[data-publication-group]')];
+  const itemLabel = root.dataset.itemLabel || 'publications';
+  const normalize = value => value.normalize('NFKD').replace(/\p{M}/gu, '')
+    .toLowerCase().replace(/&/g, ' and ').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  const searchable = entries.map(entry => normalize(entry.dataset.search));
+  const venues = entries.map(entry => normalize(entry.dataset.searchVenue || ''));
+  let topic = 'all';
+  function update() {
+    const needle = normalize(query.value);
+    const terms = needle.split(/\s+/).filter(Boolean);
+    // A complete journal name is a venue lookup, rather than separate words
+    // occurring anywhere in an abstract (e.g. "Management Science").
+    const venueLookup = needle !== '' && venues.includes(needle);
+    let count = 0;
+    entries.forEach((entry, i) => {
+      const matches = (topic === 'all' || entry.dataset.topics.split(' ').includes(topic)) &&
+        (venueLookup ? venues[i] === needle : terms.every(term => searchable[i].includes(term)));
+      entry.hidden = !matches;
+      if (matches) count++;
+    });
+    groups.forEach(group => { group.hidden = ![...group.querySelectorAll('.paper-entry')].some(entry => !entry.hidden); });
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.topic === topic)));
+    root.querySelector('.publication-count').textContent = `${count} of ${entries.length} ${itemLabel}`;
+    root.querySelector('.publication-empty').hidden = count !== 0;
+    root.querySelector('.original-footnote').hidden = count === 0;
+  }
+  query.addEventListener('input', () => {
+    // A fresh query starts globally; a topic can then explicitly narrow it.
+    topic = 'all';
+    update();
+  });
+  buttons.forEach(button => button.addEventListener('click', () => { topic = button.dataset.topic; update(); }));
+  controls.querySelector('[data-clear]').addEventListener('click', () => {
+    query.value = ''; topic = 'all'; update(); query.focus();
+  });
+  update();
+  controls.hidden = false;
+})();
+</script>

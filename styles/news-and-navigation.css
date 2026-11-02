@@ -1,0 +1,6 @@
+/* News taxonomy and desktop navigation balance. */
+.news-category { display: block; width: fit-content; margin-top: .35rem; padding: .08rem .4rem; border: 1px solid var(--rule); background: var(--surface); color: var(--accent); font-size: .72rem; line-height: 1.5; border-radius: 2px; }
+@media (min-width: 1200px) {
+ .navbar .navbar-collapse .navbar-nav { margin-left: auto !important; margin-right: 0 !important; }
+ .navbar #navbarCollapse { margin-left: 2rem; }
+}

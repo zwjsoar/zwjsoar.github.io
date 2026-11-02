@@ -1,0 +1,7 @@
+website:
+  page-footer:
+    left: Wenjun Zhu
+    center:
+      - {href: news/index.qmd, text: News}
+      - {href: review/index.qmd, text: Review notes}
+    right: Local preview · Not published

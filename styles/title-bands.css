@@ -1,0 +1,55 @@
+/* A quiet title band shared by every page. Presentation only; no added copy. */
+:root {
+  --title-band-bg: #f2edf3;
+  --title-band-edge: #8a668f;
+}
+#title-block-header,
+.home-page #title-block-header,
+.paper-page #title-block-header {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 28px 0 32px;
+  padding: 30px 32px;
+  background: var(--title-band-bg);
+  border-left: 3px solid var(--title-band-edge);
+  text-align: left;
+}
+#title-block-header .quarto-title { margin: 0; }
+#title-block-header h1.title,
+.home-page #title-block-header h1.title,
+.paper-page #title-block-header h1.title {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 3.1vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: .005em;
+  overflow-wrap: break-word;
+}
+.paper-page #title-block-header h1.title {
+  font-size: clamp(1.6rem, 2.7vw, 2.05rem);
+  line-height: 1.3;
+}
+@media (max-width: 767px) {
+  #title-block-header,
+  .home-page #title-block-header,
+  .paper-page #title-block-header {
+    margin: 18px 0 26px;
+    padding: 22px 20px;
+  }
+  #title-block-header h1.title,
+  .home-page #title-block-header h1.title { font-size: 1.8rem; }
+  .paper-page #title-block-header h1.title { font-size: 1.55rem; }
+}
+@media print {
+  #title-block-header,
+  .home-page #title-block-header,
+  .paper-page #title-block-header {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.5rem;
+  }
+}

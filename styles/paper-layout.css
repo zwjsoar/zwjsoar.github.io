@@ -1,0 +1,22 @@
+/* CV appointment lists and illustrated paper indexes, independent of content. */
+.cv-institution h3 { font-family: var(--font-body); font-size: 1rem; line-height: 1.65; margin: 1.1rem 0 .65rem; }
+.cv-content .cv-appointments { padding-left: 1.3rem; margin-bottom: 1.4rem; }
+.cv-appointments li { padding-left: .15rem; }
+.paper-entry:has(.paper-number) .paper-entry-layout { margin-left: 2.2rem; }
+.paper-entry-layout.has-figure { display: grid; grid-template-columns: minmax(0, 1fr) minmax(190px, 250px); gap: 24px; align-items: start; }
+.paper-entry-copy { min-width: 0; }
+.paper-summary { font-size: .94rem; line-height: 1.7; margin: .7rem 0 .75rem; }
+.paper-entry-visual { min-width: 0; }
+.paper-entry-visual .paper-figures { margin: 0; }
+.paper-entry-visual figure { margin: 0 0 .6rem; }
+.paper-entry-visual img { max-height: 240px; object-fit: contain; }
+.paper-entry-visual figcaption { font-size: .76rem; line-height: 1.5; margin-top: .4rem; }
+.carousel-controls { flex-wrap: wrap; }
+.paper-entry-visual .carousel-controls { justify-content: flex-start; gap: .35rem; font-size: .74rem; margin: .5rem 0 0; }
+.paper-entry-visual .carousel-status { order: -1; flex-basis: 100%; }
+.paper-entry-visual .carousel-controls button { padding: .35rem .5rem; }
+@media (max-width: 767px) {
+  .paper-entry:has(.paper-number) .paper-entry-layout { margin-left: 1.9rem; }
+  .paper-entry-layout.has-figure { grid-template-columns: 1fr; gap: 1rem; }
+  .paper-entry-visual { width: 100%; max-width: 420px; }
+}

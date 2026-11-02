@@ -1,0 +1,45 @@
+<script>
+// Both supplied figures remain readable without JS. Autoplay is optional,
+// pauses for interaction/off-screen content, and respects reduced motion.
+document.querySelectorAll('[data-carousel]').forEach(root => {
+  const slides = [...root.querySelectorAll('.carousel-slide')];
+  const controls = root.querySelector('.carousel-controls');
+  if (slides.length < 2 || !controls) return;
+  let index = 0;
+  let timer = null;
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let paused = motion.matches;
+  let hovered = false;
+  let focusPaused = false;
+  let inView = false;
+  const toggle = root.querySelector('[data-toggle]');
+  const status = root.querySelector('.carousel-status');
+  function show(next) {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((slide, n) => {slide.hidden = n !== index;});
+    status.textContent = `Figure ${index + 1} of ${slides.length}`;
+  }
+  function sync() {
+    clearInterval(timer);
+    timer = null;
+    const running = !paused && !hovered && !focusPaused && inView && !document.hidden;
+    toggle.textContent = paused ? 'Play' : 'Pause';
+    toggle.setAttribute('aria-label', paused ? 'Start automatic figure switching' : 'Pause automatic figure switching');
+    status.setAttribute('aria-live', running ? 'off' : 'polite');
+    if (running) timer = setInterval(() => show(index + 1), Number(root.dataset.interval) || 6500);
+  }
+  controls.hidden = false;
+  root.querySelector('[data-previous]').addEventListener('click', () => {show(index - 1); sync();});
+  root.querySelector('[data-next]').addEventListener('click', () => {show(index + 1); sync();});
+  toggle.addEventListener('click', () => {paused = !paused; focusPaused = false; sync();});
+  root.addEventListener('mouseenter', () => {hovered = true; sync();});
+  root.addEventListener('mouseleave', () => {hovered = false; sync();});
+  root.addEventListener('focusin', () => {focusPaused = true; sync();});
+  root.addEventListener('focusout', event => {if (!root.contains(event.relatedTarget)) {focusPaused = false; sync();}});
+  document.addEventListener('visibilitychange', sync);
+  motion.addEventListener('change', () => {paused = motion.matches; sync();});
+  new IntersectionObserver(entries => {inView = entries[0].isIntersecting; sync();}, {threshold: 0.1}).observe(root);
+  show(0);
+  sync();
+});
+</script>
