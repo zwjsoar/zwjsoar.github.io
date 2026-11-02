@@ -1,93 +1,5 @@
 [
   {
-    "id": "refereed-26",
-    "slug": "synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework",
-    "collection": "refereed",
-    "display_number": 26,
-    "display_order": 1,
-    "title": "Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies",
-    "citation": {
-      "tag": "p",
-      "text": "[26] Huiling Huang; Yixiang Tian; Chabi Marcellin Daki Dominique; Wenjun Zhu. Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies. Energy Economics, conditionally accepted.",
-      "html": "<p>[26] Huiling Huang; Yixiang Tian; Chabi Marcellin Daki Dominique; Wenjun Zhu. Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies. Energy Economics, conditionally accepted.</p>",
-      "source_block": 10000
-    },
-    "body": [
-      {
-        "tag": "p",
-        "text": "Green projects often generate environmental benefits that are not fully reflected in private cash flows, creating a wedge between social value and financial viability. This paper develops a two-stage framework that links policy intervention to green bond pricing. In the first stage, we formulate a constrained policy-optimization model that allocates carbon credits and fiscal subsidies to restore project viability under carbon-credit supply constraints, subsidy budget constraints, and institutional limits. The optimization balances discounted policy-preference cost with nominal lifecycle policy resource commitment, thereby embedding a market-first hierarchy in which carbon-credit revenues are prioritized and subsidies are used as a fiscal backstop. In the second stage, we map the optimized policy-adjusted cash flows into an option-pricing model to value the embedded green attribute of green bonds. The framework shows how policy support repairs downside cash-flow shortfalls, shifts green assets from a distressed out-of-the-money state toward an at-the-money state, and allows uncertainty in future environmental value to be capitalized as upside optionality. The empirical results show that carbon credits and subsidies are complementary rather than interchangeable. Carbon credits can restore viability when verified emission reductions are sufficient, whereas subsidies are required when carbon-market revenues are constrained by physical issuance capacity or aggregate credit supply. The analysis further shows that intervention boundaries and carbon price dynamics materially affect policy efficiency, project solvency, and bond valuation. The paper provides a structural explanation of the greenium by linking externality internalization, policy-induced cash-flow repair, and bond-level option value, offering guidance for adaptive green finance policy design.",
-        "html": "<p>Green projects often generate environmental benefits that are not fully reflected in private cash flows, creating a wedge between social value and financial viability. This paper develops a two-stage framework that links policy intervention to green bond pricing. In the first stage, we formulate a constrained policy-optimization model that allocates carbon credits and fiscal subsidies to restore project viability under carbon-credit supply constraints, subsidy budget constraints, and institutional limits. The optimization balances discounted policy-preference cost with nominal lifecycle policy resource commitment, thereby embedding a market-first hierarchy in which carbon-credit revenues are prioritized and subsidies are used as a fiscal backstop. In the second stage, we map the optimized policy-adjusted cash flows into an option-pricing model to value the embedded green attribute of green bonds. The framework shows how policy support repairs downside cash-flow shortfalls, shifts green assets from a distressed out-of-the-money state toward an at-the-money state, and allows uncertainty in future environmental value to be capitalized as upside optionality. The empirical results show that carbon credits and subsidies are complementary rather than interchangeable. Carbon credits can restore viability when verified emission reductions are sufficient, whereas subsidies are required when carbon-market revenues are constrained by physical issuance capacity or aggregate credit supply. The analysis further shows that intervention boundaries and carbon price dynamics materially affect policy efficiency, project solvency, and bond valuation. The paper provides a structural explanation of the greenium by linking externality internalization, policy-induced cash-flow repair, and bond-level option value, offering guidance for adaptive green finance policy design.</p>",
-        "source_block": 10001
-      },
-      {
-        "tag": "p",
-        "text": "Keywords: Green investment, Externality internalization, Carbon trading, Government subsidy, Decision optimization, Green bond pricing",
-        "html": "<p><strong>Keywords:</strong> Green investment, Externality internalization, Carbon trading, Government subsidy, Decision optimization, Green bond pricing</p>",
-        "source_block": 10002
-      }
-    ],
-    "figures": [],
-    "issues": [
-      "DOI and SSRN links are pending. Final publication date, volume, issue and pages have not been supplied. The owner explicitly requested the supplied manuscript PDF as an attachment on the local website."
-    ],
-    "metadata": {
-      "title": "Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies",
-      "authors": [
-        "Huiling Huang",
-        "Yixiang Tian",
-        "Chabi Marcellin Daki Dominique",
-        "Wenjun Zhu"
-      ],
-      "author_entities": [],
-      "publication_year": null,
-      "publication_date": null,
-      "doi": null,
-      "journal_title": null,
-      "target_journal": "Energy Economics",
-      "conditional_acceptance_date": "2026-10",
-      "type": "unpublished-manuscript",
-      "provenance": "Full title, Refereed Publications placement and conditional-acceptance status confirmed by owner. Author order, abstract and keywords transcribed from the supplied manuscript. No final publication date/DOI assigned."
-    },
-    "public_pdf": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf",
-    "metadata_status": "owner_confirmed_full_title_and_conditional_acceptance",
-    "abstract_source_blocks": [
-      10001
-    ],
-    "keywords": "Green investment, Externality internalization, Carbon trading, Government subsidy, Decision optimization, Green bond pricing",
-    "schema_type": "ScholarlyArticle",
-    "publication_kind": "Conditionally accepted journal manuscript",
-    "display": {
-      "authors": "Huang, H.*, Tian, Y., Daki, M.*, and Zhu, W.",
-      "publication": "Energy Economics, conditionally accepted",
-      "notes": "",
-      "links": [
-        {
-          "label": "DOI",
-          "url": null,
-          "pending": true
-        },
-        {
-          "label": "SSRN",
-          "url": null,
-          "pending": true
-        },
-        {
-          "label": "PDF",
-          "url": "/papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf"
-        }
-      ],
-      "provenance": "Owner-confirmed title and numbering [26]; manuscript authors retained in exact order; conditional status explicitly labelled. Owner requested surname/initial display and student markers for Huiling Huang and Marcellin Daki on 2026-10-29. Daki, M. follows the owner-provided short name Marcellin Daki; full manuscript author names/order remain in scholarly metadata.",
-      "detail_authors": "Huang, H.*, Tian, Y., Daki, M.*, and Zhu, W."
-    },
-    "topics": [
-      "climate",
-      "finance"
-    ],
-    "publication_status": "conditionally_accepted",
-    "source_origin": "owner_added",
-    "pdf_source_note": "Existing owner-selected conditional-acceptance manuscript; original currently remains outside materials/."
-  },
-  {
     "id": "refereed-25",
     "slug": "quantile-based-interpretable-neural-network-models-mortality-forecasting-and-actuarial-simulations",
     "collection": "refereed",
@@ -194,10 +106,6 @@
         {
           "label": "PDF",
           "url": "/papers/quantile-based-interpretable-neural-network-models-mortality-forecasting-and-actuarial-simulations/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1doVYDaAAq_IdNtZeQx6pcCO4n92UOJFr/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -206,7 +114,10 @@
       "longevity",
       "ai"
     ],
-    "pdf_source_note": "Accepted manuscript, identified on its first page."
+    "pdf_source_note": "Accepted manuscript, identified on its first page.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1doVYDaAAq_IdNtZeQx6pcCO4n92UOJFr/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-24",
@@ -349,10 +260,6 @@
         {
           "label": "PDF",
           "url": "/papers/air-quality-health-and-economic-effects-of-land-use-and-land-cover-changes-in-southeast-asia-in-the-21st-century-a-modelling-study/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1KlqFL2BALH_RZ_jVpwW-59R51p-baPBL/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -361,7 +268,10 @@
       "longevity",
       "climate"
     ],
-    "pdf_source_note": "Matching article title and ordered authors."
+    "pdf_source_note": "Matching article title and ordered authors.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1KlqFL2BALH_RZ_jVpwW-59R51p-baPBL/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-23",
@@ -492,10 +402,6 @@
         {
           "label": "PDF",
           "url": "/papers/enduring-impacts-of-el-nino-on-life-expectancy-in-past-and-future-climates/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1qwT0eK75ecDuFcQ-QiMRq3lBPfnbMFdu/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -504,7 +410,10 @@
       "longevity",
       "climate"
     ],
-    "pdf_source_note": "Author manuscript; first page identifies the revised published article and DOI."
+    "pdf_source_note": "Author manuscript; first page identifies the revised published article and DOI.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1qwT0eK75ecDuFcQ-QiMRq3lBPfnbMFdu/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-22",
@@ -831,10 +740,6 @@
         {
           "label": "PDF",
           "url": "/papers/epidemic-financing-facilities-pandemic-bonds-and-endemic-swaps/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/14Axtz5myKAPkgFQkF1rx2YGMwgK1rMbV/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -843,7 +748,10 @@
       "longevity",
       "finance"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors."
+    "pdf_source_note": "Matching manuscript title and ordered authors.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/14Axtz5myKAPkgFQkF1rx2YGMwgK1rMbV/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-19",
@@ -1067,10 +975,6 @@
         {
           "label": "PDF",
           "url": "/papers/managing-weather-risk-with-a-neural-network-based-index-insurance/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1dCuiZqDGMYMvFf55rTDzU9gPlhK3PbPZ/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1080,7 +984,10 @@
       "ai",
       "finance"
     ],
-    "pdf_source_note": "Matching manuscript title, ordered authors and abstract."
+    "pdf_source_note": "Matching manuscript title, ordered authors and abstract.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1dCuiZqDGMYMvFf55rTDzU9gPlhK3PbPZ/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-17",
@@ -1181,10 +1088,6 @@
         {
           "label": "PDF",
           "url": "/papers/machine-learning-in-long-term-mortality-forecasting/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/10DKkYaKATgG6Ao91cbGeQSnXOLbwR_qu/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1193,7 +1096,10 @@
       "longevity",
       "ai"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors; journal issue date stays separate."
+    "pdf_source_note": "Matching manuscript title and ordered authors; journal issue date stays separate.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/10DKkYaKATgG6Ao91cbGeQSnXOLbwR_qu/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-16",
@@ -1294,10 +1200,6 @@
         {
           "label": "PDF",
           "url": "/papers/cyber-risk-modeling-a-discrete-multivariate-count-process-approach/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1rJN1xQb1P80YlrZ151rpqg6tlA7yZ8UO/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1305,7 +1207,10 @@
     "topics": [
       "finance"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors."
+    "pdf_source_note": "Matching manuscript title and ordered authors.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1rJN1xQb1P80YlrZ151rpqg6tlA7yZ8UO/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-15",
@@ -1407,10 +1312,6 @@
         {
           "label": "PDF",
           "url": "/papers/storm-cat-bond-modeling-and-valuation/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/196n9IaotBDg5S8r5UzxYRg47ZSgJog2I/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1419,7 +1320,10 @@
       "climate",
       "finance"
     ],
-    "pdf_source_note": "Publisher-formatted article with matching title, ordered authors and DOI."
+    "pdf_source_note": "Publisher-formatted article with matching title, ordered authors and DOI.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/196n9IaotBDg5S8r5UzxYRg47ZSgJog2I/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-14",
@@ -1510,10 +1414,6 @@
         {
           "label": "PDF",
           "url": "/papers/a-deep-factor-model-for-crop-yield-forecasting-and-insurance-ratemaking/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1HomV5c__MB2p4gd8DJBI4QH_mZ5ee0VQ/view?usp=drive_link"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1522,7 +1422,10 @@
       "climate",
       "ai"
     ],
-    "pdf_source_note": "Matching manuscript title and sole author."
+    "pdf_source_note": "Matching manuscript title and sole author.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1HomV5c__MB2p4gd8DJBI4QH_mZ5ee0VQ/view?usp=drive_link"
+    ]
   },
   {
     "id": "refereed-13",
@@ -1636,10 +1539,6 @@
           "url": "/papers/neighbouring-prediction-for-mortality/paper.pdf"
         },
         {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1AY0mrUW3Ook_FbLOZXj6d9_jO-C9Qu02/view?usp=sharing"
-        },
-        {
           "label": "Online Appendix",
           "url": "https://drive.google.com/file/d/1yfvAXQtxwoq_hkPDFZsuIy-1cKY9j-BU/view?usp=sharing"
         },
@@ -1654,7 +1553,10 @@
       "longevity",
       "ai"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors. PDF still says forthcoming; the HTML retains published journal details."
+    "pdf_source_note": "Matching manuscript title and ordered authors. PDF still says forthcoming; the HTML retains published journal details.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1AY0mrUW3Ook_FbLOZXj6d9_jO-C9Qu02/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-12",
@@ -1762,10 +1664,6 @@
         {
           "label": "PDF",
           "url": "/papers/gompertz-law-revisited-forecasting-mortality-with-a-multi-factor-exponential-model/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1Uf6WTb5HVWzv-zY3p0rFJLiCEf-GBvHr/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1773,7 +1671,10 @@
     "topics": [
       "longevity"
     ],
-    "pdf_source_note": "Matching title and ordered authors; manuscript version January 2020, distinct from the journal issue date."
+    "pdf_source_note": "Matching title and ordered authors; manuscript version January 2020, distinct from the journal issue date.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1Uf6WTb5HVWzv-zY3p0rFJLiCEf-GBvHr/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-11",
@@ -1877,10 +1778,6 @@
         {
           "label": "PDF",
           "url": "/papers/improved-index-insurance-design-and-yield-estimation-using-a-dynamic-factor-forecasting-approach/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/open?id=15vkH0SpGEkMEVLuiZsauOzG-dPi8c2DS"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1888,7 +1785,10 @@
     "topics": [
       "climate"
     ],
-    "pdf_source_note": "Matching title, ordered authors and study; dated January 2020 manuscript, distinct from journal issue date."
+    "pdf_source_note": "Matching title, ordered authors and study; dated January 2020 manuscript, distinct from journal issue date.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/open?id=15vkH0SpGEkMEVLuiZsauOzG-dPi8c2DS"
+    ]
   },
   {
     "id": "refereed-10",
@@ -1988,10 +1888,6 @@
         {
           "label": "PDF",
           "url": "/papers/dynamic-bayesian-ratemaking-a-markov-chain-approximation-approach/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/open?id=1KALqOlWoW9j7pXEOAFlemJTBQAgDxveR"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -1999,7 +1895,10 @@
     "topics": [
       "finance"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors; filename is not treated as current publication status."
+    "pdf_source_note": "Matching manuscript title and ordered authors; filename is not treated as current publication status.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/open?id=1KALqOlWoW9j7pXEOAFlemJTBQAgDxveR"
+    ]
   },
   {
     "id": "refereed-09",
@@ -2223,10 +2122,6 @@
         {
           "label": "PDF",
           "url": "/papers/remote-sensing-applications-for-insurance-an-example-of-predicting-forage-crop-loss-in-the-presence-of-systemic-weather-risk/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/open?id=1Gt-op9UtYUvHVD7JYI3K3K7JnRah-azi"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -2234,7 +2129,10 @@
     "topics": [
       "climate"
     ],
-    "pdf_source_note": "Title matches the DOI-backed published title; ordered authors match. Existing source-based index wording is unchanged."
+    "pdf_source_note": "Title matches the DOI-backed published title; ordered authors match. Existing source-based index wording is unchanged.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/open?id=1Gt-op9UtYUvHVD7JYI3K3K7JnRah-azi"
+    ]
   },
   {
     "id": "refereed-07",
@@ -2335,10 +2233,6 @@
           "url": "/papers/a-relational-data-matching-model-for-enhancing-individual-loss-experience-an-example-from-crop-insurance/paper.pdf"
         },
         {
-          "label": "External PDF",
-          "url": "https://drive.google.com/open?id=15t7aShtdBEU3rgoQFVYJOl3GeVguo9qz"
-        },
-        {
           "label": "Online Appendix",
           "url": "https://drive.google.com/open?id=1NU4oJtvmPvmdReDsxbAIKjd2gw6euFjO"
         }
@@ -2348,7 +2242,10 @@
     "topics": [
       "climate"
     ],
-    "pdf_source_note": "Title variant the Case of rather than An Example from; ordered authors and abstract identify the same paper. Served as the supplied manuscript, without changing the citation."
+    "pdf_source_note": "Title variant the Case of rather than An Example from; ordered authors and abstract identify the same paper. Served as the supplied manuscript, without changing the citation.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/open?id=15t7aShtdBEU3rgoQFVYJOl3GeVguo9qz"
+    ]
   },
   {
     "id": "refereed-06",
@@ -2447,10 +2344,6 @@
         {
           "label": "PDF",
           "url": "/papers/agricultural-insurance-ratemaking-development-of-a-new-premium-principle/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/open?id=1XEhm-etWhjH5qP6A1jFDebn9WPUQ4C8l"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -2458,7 +2351,10 @@
     "topics": [
       "climate"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors."
+    "pdf_source_note": "Matching manuscript title and ordered authors.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/open?id=1XEhm-etWhjH5qP6A1jFDebn9WPUQ4C8l"
+    ]
   },
   {
     "id": "refereed-05",
@@ -2556,10 +2452,6 @@
         {
           "label": "PDF",
           "url": "/papers/a-credibility-based-yield-forecasting-model-for-crop-reinsurance-pricing-and-weather-risk-management/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1MUeU9WVkd5RxNN6RxeZWdOjGHZN5yDaD/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -2567,7 +2459,10 @@
     "topics": [
       "climate"
     ],
-    "pdf_source_note": "Publisher-formatted matching article selected over the older June 2015 draft."
+    "pdf_source_note": "Publisher-formatted matching article selected over the older June 2015 draft.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1MUeU9WVkd5RxNN6RxeZWdOjGHZN5yDaD/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-04",
@@ -2673,10 +2568,6 @@
         {
           "label": "PDF",
           "url": "/papers/spatial-dependence-and-aggregation-in-hedging-systemic-weather-risk-a-levy-subordinated-hierarchical-archimedean-copulas-lshac-approach/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/12TlSFGGZMi3uFw5jeUG7U4mHctctavOz/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -2685,7 +2576,10 @@
       "climate",
       "finance"
     ],
-    "pdf_source_note": "Publisher-formatted matching article selected over the revision draft; title matches the DOI-backed record."
+    "pdf_source_note": "Publisher-formatted matching article selected over the revision draft; title matches the DOI-backed record.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/12TlSFGGZMi3uFw5jeUG7U4mHctctavOz/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-03",
@@ -2800,10 +2694,6 @@
           "url": "/papers/modeling-multi-population-longevity-risk-with-mortality-dependence-a-levy-subordinated-hierarchical-archimedean-copulas-lshac-approach/paper.pdf"
         },
         {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1rYsJmBXA3DGTjxHJ-GzgXFa0_XZvtXCS/view?usp=sharing"
-        },
-        {
           "label": "Online Appendix",
           "url": "https://drive.google.com/open?id=1TRXOixzbTtLlvNIrqv4ntToQSdvTAFNf"
         }
@@ -2814,7 +2704,10 @@
       "longevity",
       "finance"
     ],
-    "pdf_source_note": "Publisher-formatted title and DOI match the scholarly record. Existing index title variant remains unchanged."
+    "pdf_source_note": "Publisher-formatted title and DOI match the scholarly record. Existing index title variant remains unchanged.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1rYsJmBXA3DGTjxHJ-GzgXFa0_XZvtXCS/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-02",
@@ -2912,10 +2805,6 @@
         {
           "label": "PDF",
           "url": "/papers/structure-and-estimation-of-levy-subordinated-hierarchical-archimedean-copulas-lshac-theory-and-empirical-tests/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1p7_BrQJDYGGbjqmv8VBubZcK3m8jgJI4/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -2923,7 +2812,10 @@
     "topics": [
       "finance"
     ],
-    "pdf_source_note": "Matching manuscript title and ordered authors; historical affiliations are not reused in the website profile."
+    "pdf_source_note": "Matching manuscript title and ordered authors; historical affiliations are not reused in the website profile.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1p7_BrQJDYGGbjqmv8VBubZcK3m8jgJI4/view?usp=sharing"
+    ]
   },
   {
     "id": "refereed-01",
@@ -3017,10 +2909,6 @@
         {
           "label": "PDF",
           "url": "/papers/a-credibility-based-erlang-mixture-model-for-pricing-crop-reinsurance/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/17G1mgBnuOV6zeJAqA7OXgv4Nj_C5vHQA/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -3028,7 +2916,10 @@
     "topics": [
       "climate"
     ],
-    "pdf_source_note": "Publisher-formatted title and ordered authors match; excludes the older draft with a different author order."
+    "pdf_source_note": "Publisher-formatted title and ordered authors match; excludes the older draft with a different author order.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/17G1mgBnuOV6zeJAqA7OXgv4Nj_C5vHQA/view?usp=sharing"
+    ]
   },
   {
     "id": "other-13",
@@ -3932,10 +3823,6 @@
         {
           "label": "PDF",
           "url": "/papers/duration-hedging-trades-return-momentum-and-reversal/paper.pdf"
-        },
-        {
-          "label": "External PDF",
-          "url": "https://drive.google.com/file/d/1B4La9CnTr_CxgcMCbez07XeeyFsFzz7q/view?usp=sharing"
         }
       ],
       "provenance": "Reformatted original website citation; no bibliographic corrections applied."
@@ -3944,6 +3831,9 @@
       "longevity",
       "finance"
     ],
-    "pdf_source_note": "Matching working-paper title, ordered authors and abstract; no replacement date inferred."
+    "pdf_source_note": "Matching working-paper title, ordered authors and abstract; no replacement date inferred.",
+    "owner_removed_resource_urls": [
+      "https://drive.google.com/file/d/1B4La9CnTr_CxgcMCbez07XeeyFsFzz7q/view?usp=sharing"
+    ]
   }
 ]

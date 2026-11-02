@@ -6,6 +6,7 @@ from urllib.parse import urlsplit,unquote
 from collections import Counter
 import argparse,json,re,hashlib,xml.etree.ElementTree as ET
 from pdf_assets import paper_pdf_targets,document_pdf_targets
+from publication_visibility import visible_papers,visible_assets
 S=Path(__file__).resolve().parents[1]
 class Document(HTMLParser):
  def __init__(self,source):
@@ -33,7 +34,10 @@ def main():
  def check(ok,msg):
   if not ok:errors.append(msg)
  docs={p:Document(p.read_text()) for p in O.rglob('*.html')}
- check(len(docs)==len(json.loads((S/'data/papers.json').read_text()))+(9 if prod else 10),'HTML page count')
+ all_papers=json.loads((S/'data/papers.json').read_text());papers=visible_papers(all_papers)
+ check(len(docs)==len(papers)+(9 if prod else 10),'HTML page count')
+ for hidden in (r for r in all_papers if not r.get('visible',True)):
+  check(not (O/'papers'/hidden['slug']/'index.html').exists(),'Hidden paper page in artifact: '+hidden['id'])
  for path,d in docs.items():
   rel=path.relative_to(O).as_posix();joined=' '.join(d.text)
   check(bool(d.meta.get('description')),'Missing description: '+rel)
@@ -61,14 +65,14 @@ def main():
    check(dest.is_relative_to(O) and dest.exists(),'Broken local resource: '+rel+' -> '+u)
    if parts.fragment and dest in docs:check(unquote(parts.fragment) in docs[dest].ids,'Broken fragment: '+rel+' -> '+u)
   if prod:check('Local preview' not in joined,'Preview footer leaked: '+rel)
- papers=json.loads((S/'data/papers.json').read_text());normalize=lambda x:re.sub(r'\s+','',x)
+ normalize=lambda x:re.sub(r'\s+','',x)
  for r in papers:
   p=O/'papers'/r['slug']/'index.html';d=docs[p];txt=normalize(''.join(d.text));m=r['metadata']
   for block in r['body']:check(normalize(block['text']) in txt,'Original text lost: '+r['id'])
   check('source-citation-heading' not in p.read_text() and 'Original website citation' not in ' '.join(d.text),'Duplicate citation block: '+r['id'])
   if not prod:check(normalize(r['citation']['text']) in normalize(''.join(docs[O/'review/index.html'].text)),'Original citation archive lost: '+r['id'])
   for tag,url,attrs in Document(r['citation']['html']).links:
-   if tag=='a':check(any(t=='a' and u==url for t,u,a in d.links),'Original public resource lost: '+r['id']+' -> '+url)
+   if tag=='a' and url not in r.get('owner_removed_resource_urls',[]):check(any(t=='a' and u==url for t,u,a in d.links),'Original public resource lost: '+r['id']+' -> '+url)
   work=d.ld[0];check(work['@type']==r['schema_type'],'Classification: '+r['id'])
   check(r['publication_kind'] in ' '.join(d.text),'Visible classification: '+r['id'])
   if prod:check(work.get('url')==base+'papers/'+r['slug']+'/' and work.get('@id')==base+'papers/'+r['slug']+'/#work','Work identity URL: '+r['id'])
@@ -142,8 +146,9 @@ def main():
   for entry in news['entries']:
    if entry.get('visible',True):check(normalize(entry['text']) in txt,'News missing: '+entry['id'])
  asset_records=json.loads((S/'data/assets.json').read_text())
+ if prod:asset_records=visible_assets(all_papers,asset_records)
  allow={a['target']:a['sha256'] for a in asset_records}
- approved_pdfs={'assets/cv/CV_WenjunZhu.pdf'}|paper_pdf_targets(papers,asset_records)|document_pdf_targets(asset_records)
+ approved_pdfs={'assets/cv/CV_WenjunZhu.pdf'}|paper_pdf_targets(papers if prod else all_papers,asset_records)|document_pdf_targets(asset_records)
  for p in O.rglob('*'):
   check(not p.is_symlink(),'Symlink in artifact: '+str(p))
   if not p.is_file():continue

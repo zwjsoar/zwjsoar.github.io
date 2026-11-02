@@ -45,8 +45,7 @@
     "working-03": "A neural stochastic differential equation framework jointly models mortality, interest rates and housing conditions for reverse mortgage valuation. Forecasting and simulation results inform a Monte Carlo pricing engine for tenure-payment contracts.",
     "working-04": "A behaviour-based machine learning framework forms risk pools for area-yield insurance using utility maximization and spectral clustering. U.S. corn and soybean data are used to evaluate basis risk, tail risk and contract performance.",
     "working-05": "A geographically structured deep learning model captures spatial dependencies in flood hazards to inform insurance pricing. Mississippi River Basin data and an application to the National Flood Insurance Program are used to evaluate hazard estimates, premiums and capital requirements.",
-    "working-06": "The paper uses longevity shocks to identify duration-hedging stock trades by pensions and life insurers. It examines how these trades relate to momentum and contrarian trading patterns.",
-    "refereed-26": "A two-stage framework optimizes carbon credits and subsidies to support green-project viability, then links policy-adjusted cash flows to green bond pricing. It examines how complementary policy instruments affect project solvency and the value of the green attribute."
+    "working-06": "The paper uses longevity shocks to identify duration-hedging stock trades by pensions and life insurers. It examines how these trades relate to momentum and contrarian trading patterns."
   },
   "owner_reviewed_on": "2026-10-29",
   "verified_summary_sources": {

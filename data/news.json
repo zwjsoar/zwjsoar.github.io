@@ -39,21 +39,6 @@
       "source_note": "Owner supplied the 2026 Nanyang Award e-booklet link on 2026-10-29, replacing the general award introduction and pending-announcement note."
     },
     {
-      "id": "energy-economics-conditional-acceptance-2026",
-      "date": "2026-10",
-      "date_precision": "month",
-      "date_kind": "conditional_acceptance",
-      "display_date": "October 2026",
-      "category": "Paper",
-      "text": "Conditional acceptance at Energy Economics: “Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies”.",
-      "url": "/papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/index.html",
-      "link_label": "Paper details",
-      "visible": true,
-      "recorded_on": "2026-10-28",
-      "source_note": "Conditional acceptance and October 2026 explicitly supplied/confirmed by owner; local PDF stays private.",
-      "title": "Energy Economics conditional acceptance"
-    },
-    {
       "id": "ncc-publication-2026",
       "date": "2026-01",
       "date_precision": "month",

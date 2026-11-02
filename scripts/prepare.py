@@ -7,15 +7,22 @@ from urllib.parse import unquote
 import json,re
 from scholarly import build_metadata,bibtex
 from pdf_assets import paper_pdf_targets
+from publication_visibility import visible_papers
 from build_context import PRODUCTION,BASE,page_url,person_schema
 S=Path(__file__).resolve().parents[1]
 def read(name):return json.loads((S/'data'/name).read_text())
-PAGES=read('pages.json');PAPERS=read('papers.json');NEWS=read('news.json');PERSON=read('person.json')
+PAGES=read('pages.json');ALL_PAPERS=read('papers.json');PAPERS=visible_papers(ALL_PAPERS);NEWS=read('news.json');PERSON=read('person.json')
 TOPIC_CONFIG=read('publication_topics.json');TOPICS=TOPIC_CONFIG['topics']
 PROFILE=read('academic_profile.json')
-paper_pdf_targets(PAPERS,read('assets.json'))
+paper_pdf_targets(ALL_PAPERS,read('assets.json'))
 SUMMARIES=read('paper_summaries.json')['entries']
-assert set(SUMMARIES)=={r['id'] for r in PAPERS}, 'Every indexed paper needs an evidence-based reading summary.'
+assert {r['id'] for r in PAPERS} <= set(SUMMARIES), 'Every indexed paper needs an evidence-based reading summary.'
+for rec in ALL_PAPERS:
+ if not rec.get('visible',True):
+  # Remove generated pages only; retain all original/local manuscript files.
+  for generated in ['index.qmd','_metadata-head.html']:
+   (S/'papers'/rec['slug']/generated).unlink(missing_ok=True)
+  (S/'_site/papers'/rec['slug']/'index.html').unlink(missing_ok=True)
 H=escape
 def text(raw):
  class Extract(HTMLParser):
@@ -176,7 +183,7 @@ for institution,appointment in [(31,32),(33,34)]:
 raw_qmd('cv/index.qmd','CV','<div class="cv-content">'+cv+'</div>')
 # Publication and working-paper listings, using explicit original ordering.
 conditional=[r for r in PAPERS if r['collection']=='conditional'];ref=[r for r in PAPERS if r['collection']=='refereed'];other=[r for r in PAPERS if r['collection']=='other'];wp=[r for r in PAPERS if r['collection']=='working']
-assert [x['display_number'] for x in ref]==list(range(26,0,-1))
+assert [x['display_number'] for x in ref]==sorted({x['display_number'] for x in ref},reverse=True)
 assert [x['display_number'] for x in other]==list(range(13,0,-1))
 pub='<div data-publication-browser>'+publication_controls(conditional+ref+other)+'<div id="publication-results">'
 if conditional:pub+='<section data-publication-group><h2 class="section-heading">Conditionally Accepted</h2>'+''.join(entry(r) for r in conditional)+'</section>'
@@ -267,7 +274,7 @@ for r in PAPERS:
  if r['issues']:review+='<li><a href="/papers/'+r['slug']+'/index.html">'+H(r['title'])+'</a>: '+H(' '.join(r['issues']))+'</li>'
 review+='</ul><p>The full citation-correction table remains in planning/citation_corrections.md in the project workspace. The initial GitHub Pages address is selected; repository creation, upload and publication remain deferred.</p>'
 review+='<h2>Original citation archive</h2>'
-for r in PAPERS:
+for r in ALL_PAPERS:
  page='working-papers' if r['collection']=='working' else 'publication'
  review+='<details class="citation-archive"><summary>'+H(r['id']+' · '+r['title'])+'</summary>'+stamp(r['citation'],page)+'</details>'
 if not PRODUCTION:raw_qmd('review/index.qmd','Review notes',review)

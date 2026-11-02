@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import argparse,json,os,shutil,subprocess,hashlib
 from pdf_assets import paper_pdf_targets,document_pdf_targets
+from publication_visibility import visible_papers,visible_assets
 S=Path(__file__).resolve().parents[1]
 def main():
  parser=argparse.ArgumentParser(description=__doc__)
@@ -28,8 +29,11 @@ def main():
   shutil.copy2(S/name,stage/name)
  for name in ['scripts','styles','data','_includes']:
   shutil.copytree(S/name,stage/name,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
- assets=json.loads((S/'data/assets.json').read_text())
- papers=json.loads((S/'data/papers.json').read_text())
+ all_papers=json.loads((S/'data/papers.json').read_text())
+ assets=visible_assets(all_papers,json.loads((S/'data/assets.json').read_text()))
+ papers=visible_papers(all_papers)
+ (stage/'data/papers.json').write_text(json.dumps(papers,ensure_ascii=False,indent=2)+'\n')
+ (stage/'data/assets.json').write_text(json.dumps(assets,ensure_ascii=False,indent=2)+'\n')
  approved_pdfs=paper_pdf_targets(papers,assets)|document_pdf_targets(assets)
  for asset in assets:
   rel=Path(asset['target']);src=S/rel

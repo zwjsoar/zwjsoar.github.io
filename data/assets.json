@@ -75,23 +75,6 @@
     "usage": "Owner-requested NBS logo in shared profile; displayed unchanged at natural aspect ratio"
   },
   {
-    "target": "assets/papers/EE_Zhu_R2.pdf",
-    "sha256": "19ae6614322b4afc779a409b9ce3098e3992d7d7e9de229fab120b7c0fef1be6",
-    "usage": "Compatibility copy of the mapped Energy Economics main PDF; no upload or publication performed.",
-    "owner_approved_paper_pdf": true,
-    "paper_id": "refereed-26",
-    "pdf_role": "legacy_alias",
-    "alias_of": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf"
-  },
-  {
-    "target": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf",
-    "sha256": "19ae6614322b4afc779a409b9ce3098e3992d7d7e9de229fab120b7c0fef1be6",
-    "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Existing owner-selected conditional-acceptance manuscript; original currently remains outside materials/.",
-    "owner_approved_paper_pdf": true,
-    "paper_id": "refereed-26",
-    "pdf_role": "main"
-  },
-  {
     "target": "papers/quantile-based-interpretable-neural-network-models-mortality-forecasting-and-actuarial-simulations/paper.pdf",
     "sha256": "526b1f81976e00d99943153d95e5e410274b15b18113919297b50034bb458e8c",
     "usage": "Main paper PDF matched under owner all-paper download policy of 2026-10-29. Accepted manuscript, identified on its first page.",
