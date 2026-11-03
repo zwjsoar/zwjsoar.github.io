@@ -2,15 +2,21 @@
 from build_context import ROOT,BASE,PRODUCTION
 from urllib.parse import urlsplit
 from html import escape
-import re,xml.etree.ElementTree as ET
+import re,json,xml.etree.ElementTree as ET
 if not PRODUCTION:raise SystemExit('Production post-render hook used outside production')
 out=ROOT/'_site-production';prefix=urlsplit(BASE).path.rstrip('/')
 urls=[]
+identity=json.loads((ROOT/'data/search_identity.json').read_text())
 for p in sorted(out.rglob('*.html')):
  rel=p.relative_to(out).as_posix()
  if rel.startswith(('review/','opportunities/')):raise SystemExit('Review-only page unexpectedly rendered')
  canonical=BASE+rel.removesuffix('index.html')
  s=p.read_text()
+ if rel in ['index.html','zh/index.html']:
+  # Quarto rewrites og:description from its visible title-block description.
+  # Keep the approved biography/layout unchanged and set this head-only field.
+  description=identity['home' if rel=='index.html' else 'zh']['description']
+  s=re.sub(r'<meta property="og:description" content="[^"]*">',lambda m:'<meta property="og:description" content="'+escape(description,quote=True)+'">',s)
  s=re.sub(r'<link\b(?=[^>]*\brel=["\']canonical["\'])[^>]*>\s*','',s,flags=re.I)
  s=s.replace('</head>','<link rel="canonical" href="'+escape(canonical,quote=True)+'">\n</head>',1)
  if prefix:

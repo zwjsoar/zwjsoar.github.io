@@ -14,6 +14,7 @@ def read(name):return json.loads((S/'data'/name).read_text())
 PAGES=read('pages.json');ALL_PAPERS=read('papers.json');PAPERS=visible_papers(ALL_PAPERS);NEWS=read('news.json');PERSON=read('person.json')
 TOPIC_CONFIG=read('publication_topics.json');TOPICS=TOPIC_CONFIG['topics']
 PROFILE=read('academic_profile.json')
+SEARCH_IDENTITY=read('search_identity.json')
 paper_pdf_targets(ALL_PAPERS,read('assets.json'))
 SUMMARIES=read('paper_summaries.json')['entries']
 assert {r['id'] for r in PAPERS} <= set(SUMMARIES), 'Every indexed paper needs an evidence-based reading summary.'
@@ -70,6 +71,20 @@ def raw_qmd(path,title,body,classes='',lang=None,header_extra='',description=Non
  front={'title':title,'pagetitle':title,'body-classes':('shared-profile-page '+classes).strip(),'toc':False}
  body=academic_profile()+'<div class="site-page-content">'+body+'</div>'
  if lang:front['lang']=lang
+ identity=SEARCH_IDENTITY.get('home' if path=='index.qmd' else 'zh' if path=='zh/index.qmd' else '')
+ if identity:
+  front['pagetitle']=identity['title']
+  front['title-prefix']=''
+  description=identity['description']
+  header_extra+='<meta property="og:title" content="'+H(identity['title'],quote=True)+'">\n'
+  header_extra+='<meta property="og:description" content="'+H(identity['description'],quote=True)+'">\n'
+  header_extra+='<meta property="og:site_name" content="'+H(SEARCH_IDENTITY['site_name'],quote=True)+'">\n'
+  if BASE:
+   profile={'@context':'https://schema.org','@type':'ProfilePage','@id':page_url(path)+'#profile','url':page_url(path),'name':identity['title'],'inLanguage':lang or 'en','mainEntity':{'@id':BASE+'#person'}}
+   header_extra+='<script type="application/ld+json">'+json.dumps(profile,ensure_ascii=False).replace('</','<\\/')+'</script>\n'
+   if path=='index.qmd':
+    website={'@context':'https://schema.org','@type':'WebSite','@id':BASE+'#website','url':BASE,'name':SEARCH_IDENTITY['site_name'],'publisher':{'@id':BASE+'#person'},'inLanguage':['en','zh-Hans']}
+    header_extra+='<script type="application/ld+json">'+json.dumps(website,ensure_ascii=False).replace('</','<\\/')+'</script>\n'
  if description is None:
   defaults={'index.qmd':'Wenjun Zhu, Associate Professor at Nanyang Technological University. Research, publications, teaching and academic news.','cv/index.qmd':'Curriculum vitae of Wenjun Zhu: education, academic appointments and professional service.','publications/index.qmd':'Publications by Wenjun Zhu, with individual paper pages, abstracts and existing public source links.','working-papers/index.qmd':'Selected working papers by Wenjun Zhu and coauthors, with abstracts and public source links.','research/index.qmd':'Wenjun Zhu’s research interests and projects in insurance, finance and risk management.','teaching/index.qmd':'Courses taught by Wenjun Zhu in actuarial science, finance and risk management.','news/index.qmd':'Academic news and upcoming presentations from Wenjun Zhu.','miscellaneous/index.qmd':'Personal interests and miscellaneous writing from Wenjun Zhu.','zh/index.qmd':PERSON['chinese_profile'],'review/index.qmd':'Local review notes and unresolved migration decisions.'}
   description=defaults.get(path,title)

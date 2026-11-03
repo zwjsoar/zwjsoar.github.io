@@ -13,7 +13,7 @@ def page_url(path):
  path=str(path).replace('index.qmd','').replace('index.html','').lstrip('/')
  return BASE+path if BASE else None
 def person_schema(person):
- p={'@context':'https://schema.org','@type':'Person','name':person['name'],'alternateName':person['chinese_name'],'jobTitle':person.get('job_titles',['Associate Professor (with tenure)']),'worksFor':{'@type':'Organization','name':'Nanyang Technological University'},'affiliation':{'@type':'Organization','name':'Nanyang Business School'},'sameAs':person.get('same_as',[])}
+ p={'@context':'https://schema.org','@type':'Person','name':person['name'],'alternateName':person['chinese_name'],'jobTitle':person.get('job_titles',['Associate Professor (with tenure)']),'worksFor':{'@type':'CollegeOrUniversity','name':'Nanyang Technological University','alternateName':['NTU','南洋理工大学'],'url':'https://www.ntu.edu.sg/'},'affiliation':{'@type':'Organization','name':'Nanyang Business School','alternateName':['NBS','南洋商学院'],'url':'https://www.ntu.edu.sg/business','parentOrganization':{'@type':'CollegeOrUniversity','name':'Nanyang Technological University','url':'https://www.ntu.edu.sg/'}},'sameAs':person.get('same_as',[])}
  if person.get('awards'):p['award']=person['awards']
  if BASE:p.update({'@id':BASE+'#person','url':BASE,'image':BASE+'assets/profile/profile.png'})
  return p
