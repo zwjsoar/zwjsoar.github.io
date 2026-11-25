@@ -88,11 +88,19 @@ def main():
    if r.get('publication_status')=='conditionally_accepted' or r['collection']=='conditional':
     check(not d.meta.get('citation_publication_date') and not d.meta.get('citation_journal_title') and not d.meta.get('citation_doi'),'Conditional manuscript must not imply final publication: '+r['id'])
     check(work.get('creativeWorkStatus')=='Conditionally accepted' and 'datePublished' not in work and 'isPartOf' not in work,'Conditional manuscript status/date: '+r['id'])
+   elif r.get('publication_status')=='forthcoming':
+    check(work.get('creativeWorkStatus')=='Forthcoming','Forthcoming status: '+r['id'])
+    expected_date=m.get('publication_date') or m.get('publication_year')
+    check(d.meta.get('citation_publication_date',[])==([expected_date] if expected_date else []),'Forthcoming date: '+r['id'])
+    if not expected_date:check('datePublished' not in work,'Unassigned publication date: '+r['id'])
    else:check(d.meta.get('citation_publication_date')==[m.get('publication_date',m['publication_year'])],'Date: '+r['id'])
    check(d.meta.get('citation_title')==[''.join(d.h1).strip()],'Title identity: '+r['id'])
   if r['collection']=='refereed' and r.get('publication_status')!='conditionally_accepted':
-   check(d.meta.get('citation_doi')==[m['doi']],'DOI: '+r['id'])
-   check(work['identifier']['value']==m['doi'],'Schema DOI: '+r['id'])
+   if m.get('doi'):
+    check(d.meta.get('citation_doi')==[m['doi']],'DOI: '+r['id'])
+    check(work['identifier']['value']==m['doi'],'Schema DOI: '+r['id'])
+   else:
+    check(r.get('publication_status')=='forthcoming' and not d.meta.get('citation_doi') and 'identifier' not in work,'Unassigned forthcoming DOI: '+r['id'])
    for key,tag in [('journal_title','citation_journal_title'),('book_title','citation_book_title'),('volume','citation_volume'),('issue','citation_issue'),('article_number','citation_article_number')]:
     if m.get(key):check(d.meta.get(tag)==[m[key]],'Field '+tag+': '+r['id'])
    if m.get('article_number'):check(work.get('pagination')==m['article_number'],'Article identifier: '+r['id'])
@@ -100,7 +108,7 @@ def main():
     pages=re.split(r'[-–]',m['page'],maxsplit=1)
     check(d.meta.get('citation_firstpage')==[pages[0]] and work.get('pageStart')==pages[0],'First page: '+r['id'])
     if len(pages)==2:check(d.meta.get('citation_lastpage')==[pages[1]] and work.get('pageEnd')==pages[1],'Last page: '+r['id'])
-   check((p.parent/'citation.bib').exists(),'Citation export: '+r['id'])
+   if m.get('doi'):check((p.parent/'citation.bib').exists(),'Citation export: '+r['id'])
   listing=docs[O/('working-papers/index.html' if r['collection']=='working' else 'publications/index.html')]
   check(any('/papers/'+r['slug']+'/' in u or 'papers/'+r['slug']+'/' in u for tag,u,a in listing.links),'Paper unreachable from index: '+r['id'])
   listing_source=(O/('working-papers/index.html' if r['collection']=='working' else 'publications/index.html')).read_text()

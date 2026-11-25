@@ -31,6 +31,7 @@ def build_metadata(rec,abstract):
  if rec['collection']=='working':sd['genre']='Working paper'
  if m:
   if rec.get('publication_status')=='conditionally_accepted' or rec['collection']=='conditional':sd['creativeWorkStatus']='Conditionally accepted'
+  elif rec.get('publication_status')=='forthcoming':sd['creativeWorkStatus']='Forthcoming'
   elif m.get('publication_date',m.get('publication_year')):sd['datePublished']=m.get('publication_date',m.get('publication_year'))
   if m.get('doi'):
    sd['identifier']={'@type':'PropertyValue','propertyID':'DOI','value':m['doi']};sd['sameAs']='https://doi.org/'+m['doi']

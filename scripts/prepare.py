@@ -251,6 +251,7 @@ for rec in PAPERS:
    if m.get('online_date'):body+='<br>Published online: '+H(m['online_date'])
    body+=' · <a href="citation.bib" download>Download citation (BibTeX)</a></p>'
    bib=S/'papers'/rec['slug']/'citation.bib';bib.parent.mkdir(parents=True,exist_ok=True);bib.write_text(bibtex(rec))
+  elif rec.get('publication_status')=='forthcoming':body+='<p class="publication-details">'+H(m['journal_title'])+' · forthcoming</p>'
   elif rec.get('publication_status')=='conditionally_accepted' or rec['collection']=='conditional':body+='<p class="publication-details">Energy Economics · Conditionally accepted (October 2026)</p>'
   else:body+='<p class="publication-details">Working paper · '+H(m['publication_year'])+'</p>'
  else:
