@@ -27,9 +27,7 @@
       }
     ],
     "figures": [],
-    "issues": [
-      "DOI and SSRN links are pending. Final publication date, volume, issue and pages have not been supplied. The owner explicitly requested the supplied manuscript PDF as an attachment on the local website."
-    ],
+    "issues": [],
     "metadata": {
       "title": "Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies",
       "authors": [
@@ -38,18 +36,43 @@
         "Chabi Marcellin Daki Dominique",
         "Wenjun Zhu"
       ],
-      "author_entities": [],
-      "publication_year": null,
-      "publication_date": null,
-      "doi": null,
+      "author_entities": [
+        {
+          "given": "Huiling",
+          "family": "Huang"
+        },
+        {
+          "given": "Yixiang",
+          "family": "Tian"
+        },
+        {
+          "given": "Chabi Marcellin Daki",
+          "family": "Dominique",
+          "ORCID": "https://orcid.org/0009-0007-0624-4881"
+        },
+        {
+          "given": "Wenjun",
+          "family": "Zhu"
+        }
+      ],
+      "publication_year": "2027",
+      "publication_date": "2027-01",
+      "doi": "10.1016/j.eneco.2026.109705",
       "journal_title": "Energy Economics",
       "target_journal": "Energy Economics",
       "conditional_acceptance_date": "2026-10",
       "type": "journal-article",
-      "provenance": "Full title, Refereed Publications placement and formal acceptance confirmed by owner; forthcoming status requested on 2026-11-24. Author order, abstract and keywords transcribed from the supplied manuscript. Final publication date and DOI have not been supplied."
+      "provenance": "DOI, ordered author entities, scheduled January 2027 publication, volume and article number verified against the publisher-deposited Crossref record on 2026-11-25. The owner-supplied published Elsevier PDF confirms the title, ordered authors, DOI and online publication date of 2026-11-16. Existing owner-confirmed display title, short author names and forthcoming label retained.",
+      "online_date": "2026-11-16",
+      "volume": "165",
+      "article_number": "109705",
+      "publisher": "Elsevier BV",
+      "issn": [
+        "0140-9883"
+      ]
     },
     "public_pdf": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf",
-    "metadata_status": "owner_confirmed_formal_acceptance_forthcoming",
+    "metadata_status": "verified_doi_record_and_owner_supplied_ssrn",
     "abstract_source_blocks": [
       10001
     ],
@@ -63,20 +86,18 @@
       "links": [
         {
           "label": "DOI",
-          "url": null,
-          "pending": true
+          "url": "https://doi.org/10.1016/j.eneco.2026.109705"
         },
         {
           "label": "SSRN",
-          "url": null,
-          "pending": true
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7752118"
         },
         {
           "label": "PDF",
           "url": "/papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf"
         }
       ],
-      "provenance": "Owner-confirmed title and numbering [26]; manuscript authors retained in exact order; formal acceptance confirmed and forthcoming status requested by owner on 2026-11-24. Owner requested surname/initial display and student markers for Huiling Huang and Marcellin Daki on 2026-10-29. Daki, M. follows the owner-provided short name Marcellin Daki; full manuscript author names/order remain in scholarly metadata.",
+      "provenance": "Owner-confirmed title and numbering [26]; manuscript authors retained in exact order; formal acceptance confirmed and forthcoming status requested by owner on 2026-11-24. Owner requested surname/initial display and student markers for Huiling Huang and Marcellin Daki on 2026-10-29. Daki, M. follows the owner-provided short name Marcellin Daki; full manuscript author names/order remain in scholarly metadata. DOI and SSRN links updated at the owner’s request on 2026-11-25.",
       "detail_authors": "Huang, H.*, Tian, Y., Daki, M.*, and Zhu, W."
     },
     "topics": [
