@@ -1,5 +1,95 @@
 [
   {
+    "id": "refereed-26",
+    "slug": "synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework",
+    "collection": "refereed",
+    "display_number": 26,
+    "display_order": 1,
+    "title": "Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies",
+    "citation": {
+      "tag": "p",
+      "text": "[26] Huiling Huang; Yixiang Tian; Chabi Marcellin Daki Dominique; Wenjun Zhu. Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies. Energy Economics, forthcoming.",
+      "html": "<p>[26] Huiling Huang; Yixiang Tian; Chabi Marcellin Daki Dominique; Wenjun Zhu. Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies. Energy Economics, forthcoming.</p>",
+      "source_block": 10000
+    },
+    "body": [
+      {
+        "tag": "p",
+        "text": "Green projects often generate environmental benefits that are not fully reflected in private cash flows, creating a wedge between social value and financial viability. This paper develops a two-stage framework that links policy intervention to green bond pricing. In the first stage, we formulate a constrained policy-optimization model that allocates carbon credits and fiscal subsidies to restore project viability under carbon-credit supply constraints, subsidy budget constraints, and institutional limits. The optimization balances discounted policy-preference cost with nominal lifecycle policy resource commitment, thereby embedding a market-first hierarchy in which carbon-credit revenues are prioritized and subsidies are used as a fiscal backstop. In the second stage, we map the optimized policy-adjusted cash flows into an option-pricing model to value the embedded green attribute of green bonds. The framework shows how policy support repairs downside cash-flow shortfalls, shifts green assets from a distressed out-of-the-money state toward an at-the-money state, and allows uncertainty in future environmental value to be capitalized as upside optionality. The empirical results show that carbon credits and subsidies are complementary rather than interchangeable. Carbon credits can restore viability when verified emission reductions are sufficient, whereas subsidies are required when carbon-market revenues are constrained by physical issuance capacity or aggregate credit supply. The analysis further shows that intervention boundaries and carbon price dynamics materially affect policy efficiency, project solvency, and bond valuation. The paper provides a structural explanation of the greenium by linking externality internalization, policy-induced cash-flow repair, and bond-level option value, offering guidance for adaptive green finance policy design.",
+        "html": "<p>Green projects often generate environmental benefits that are not fully reflected in private cash flows, creating a wedge between social value and financial viability. This paper develops a two-stage framework that links policy intervention to green bond pricing. In the first stage, we formulate a constrained policy-optimization model that allocates carbon credits and fiscal subsidies to restore project viability under carbon-credit supply constraints, subsidy budget constraints, and institutional limits. The optimization balances discounted policy-preference cost with nominal lifecycle policy resource commitment, thereby embedding a market-first hierarchy in which carbon-credit revenues are prioritized and subsidies are used as a fiscal backstop. In the second stage, we map the optimized policy-adjusted cash flows into an option-pricing model to value the embedded green attribute of green bonds. The framework shows how policy support repairs downside cash-flow shortfalls, shifts green assets from a distressed out-of-the-money state toward an at-the-money state, and allows uncertainty in future environmental value to be capitalized as upside optionality. The empirical results show that carbon credits and subsidies are complementary rather than interchangeable. Carbon credits can restore viability when verified emission reductions are sufficient, whereas subsidies are required when carbon-market revenues are constrained by physical issuance capacity or aggregate credit supply. The analysis further shows that intervention boundaries and carbon price dynamics materially affect policy efficiency, project solvency, and bond valuation. The paper provides a structural explanation of the greenium by linking externality internalization, policy-induced cash-flow repair, and bond-level option value, offering guidance for adaptive green finance policy design.</p>",
+        "source_block": 10001
+      },
+      {
+        "tag": "p",
+        "text": "Keywords: Green investment, Externality internalization, Carbon trading, Government subsidy, Decision optimization, Green bond pricing",
+        "html": "<p><strong>Keywords:</strong> Green investment, Externality internalization, Carbon trading, Government subsidy, Decision optimization, Green bond pricing</p>",
+        "source_block": 10002
+      }
+    ],
+    "figures": [],
+    "issues": [
+      "DOI and SSRN links are pending. Final publication date, volume, issue and pages have not been supplied. The owner explicitly requested the supplied manuscript PDF as an attachment on the local website."
+    ],
+    "metadata": {
+      "title": "Synergistic Policy Intervention for Green Investment and Bond Pricing: An Optimization Framework with Carbon Credits and Subsidies",
+      "authors": [
+        "Huiling Huang",
+        "Yixiang Tian",
+        "Chabi Marcellin Daki Dominique",
+        "Wenjun Zhu"
+      ],
+      "author_entities": [],
+      "publication_year": null,
+      "publication_date": null,
+      "doi": null,
+      "journal_title": "Energy Economics",
+      "target_journal": "Energy Economics",
+      "conditional_acceptance_date": "2026-10",
+      "type": "journal-article",
+      "provenance": "Full title, Refereed Publications placement and formal acceptance confirmed by owner; forthcoming status requested on 2026-11-24. Author order, abstract and keywords transcribed from the supplied manuscript. Final publication date and DOI have not been supplied."
+    },
+    "public_pdf": "papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf",
+    "metadata_status": "owner_confirmed_formal_acceptance_forthcoming",
+    "abstract_source_blocks": [
+      10001
+    ],
+    "keywords": "Green investment, Externality internalization, Carbon trading, Government subsidy, Decision optimization, Green bond pricing",
+    "schema_type": "ScholarlyArticle",
+    "publication_kind": "Journal article",
+    "display": {
+      "authors": "Huang, H.*, Tian, Y., Daki, M.*, and Zhu, W.",
+      "publication": "Energy Economics, forthcoming",
+      "notes": "",
+      "links": [
+        {
+          "label": "DOI",
+          "url": null,
+          "pending": true
+        },
+        {
+          "label": "SSRN",
+          "url": null,
+          "pending": true
+        },
+        {
+          "label": "PDF",
+          "url": "/papers/synergistic-policy-intervention-for-green-investment-and-bond-pricing-an-optimization-framework/paper.pdf"
+        }
+      ],
+      "provenance": "Owner-confirmed title and numbering [26]; manuscript authors retained in exact order; formal acceptance confirmed and forthcoming status requested by owner on 2026-11-24. Owner requested surname/initial display and student markers for Huiling Huang and Marcellin Daki on 2026-10-29. Daki, M. follows the owner-provided short name Marcellin Daki; full manuscript author names/order remain in scholarly metadata.",
+      "detail_authors": "Huang, H.*, Tian, Y., Daki, M.*, and Zhu, W."
+    },
+    "topics": [
+      "climate",
+      "finance"
+    ],
+    "publication_status": "forthcoming",
+    "source_origin": "owner_added",
+    "pdf_source_note": "Existing owner-selected conditional-acceptance manuscript; original currently remains outside materials/.",
+    "visible": true,
+    "visibility_note": "Restored to Publications at the owner’s request after formal acceptance, confirmed on 2026-11-24; listed as forthcoming."
+  },
+  {
     "id": "refereed-25",
     "slug": "quantile-based-interpretable-neural-network-models-mortality-forecasting-and-actuarial-simulations",
     "collection": "refereed",
